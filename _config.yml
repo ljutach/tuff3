@@ -1,13 +1,10 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+image: ruby:2.7
+
 pages:
-  image: node:latest
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
-    - npm ci
+    - gem install bundler
+    - bundle install
+    - bundle exec jekyll build -d public/
   artifacts:
     paths:
       - public
