@@ -1,0 +1,12 @@
+pages:
+  image: node:latest
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+    - npm ci
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
