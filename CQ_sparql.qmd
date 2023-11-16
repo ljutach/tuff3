@@ -1,0 +1,743 @@
+---
+title: "SPARQL queries"
+format: html
+editor: visual
+---
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+### 1) Quali termini vengono equiparati al termine "bosco"?
+
+SELECT ?comma ?explanandum ?explanans
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:semanticamente_equivalente_a.
+
+?explanans t3:undergoer t3:semanticamente_equivalente_a.
+
+}
+
+UNION
+
+{
+
+?explanandum t3:actor t3:semanticamente_equivalente_a.
+
+?explanandum t3:hasReference ?comma
+
+}
+
+}
+
+### 2) Come è definito Il patrimonio forestale nazionale?
+
+SELECT ?comma ?explanandum ?explanans ?condition ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2a_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2a_si_definisce_come.
+
+?explanans t3:hasReference ?reference
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2a_si_definisce_come.
+
+?explanans t3:hasCondition ?condition
+
+}
+
+}
+
+### 3) Come è definita La gestione forestale sostenibile?
+
+SELECT ?comma ?explanandum ?synonym ?explanans ?function ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2b_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+?explanandum t3:hasSynonym ?synonym.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2b_si_definisce_come.
+
+?explanans t3:hasFunction ?function
+
+FILTER NOT EXISTS
+
+{
+
+?function t3:hasMetaAttr t3:senza_comportare_danni_ad_altri_ecosistemi.
+
+}
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2b_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+?function t3:hasMetaAttr ?condition.
+
+}
+
+}
+
+### 4) Come sono definite le pratiche selvicolturali?
+
+SELECT ?comma ?explanandum ?explanans ?function ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2c_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2c_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+FILTER NOT EXISTS
+
+{
+
+?function t3:hasMetaAttr t3:di_quanto_previsto_alla_lettera_d.
+
+}
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2c_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+?function t3:hasMetaAttr ?reference
+
+}
+
+}
+
+### 5) Come sono definiti i prodotti forestali spontanei non legnosi?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?function ?exception
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2d_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2d_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+?explanans t3:hasException ?exception.
+
+}
+
+}
+
+### 6) Come vengono definite le sistemazioni idraulico-forestali?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?function
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2e_sono_definite_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2e_sono_definite_come.
+
+?explanans t3:hasFunction ?function.
+
+}
+
+}
+
+### 7) Come viene definita la viabilità forestale e silvo-pastorale?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?condition ?metric ?function
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2f_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2f_si_definisce_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2f_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2f_si_definisce_come.
+
+?explanans t3:hasMetric ?metric.
+
+}
+
+}
+
+### 8) Come vengono definiti i terreni abbandonati caratterizzati dal bosco ceduo?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?metric ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2g1_sono_definiti_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2g1_sono_definiti_come.
+
+?explanans t3:hasMetric ?metric.
+
+?metric t3:hasMetaAttr ?condition
+
+}
+
+}
+
+### 9) Come vengono definiti i terreni abbandonati caratterizzati dal bosco d'alto fusto?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2g2_sono_definiti_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2g2_sono_definiti_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+}
+
+### 10) Come vengono definiti i terreni abbandonati caratterizzati da colture agricole?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?exception ?explanans ?condition ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2g3_sono_definiti_come.
+
+?explanandum t3:hasReference ?comma.
+
+?explanandum t3:hasException ?exception.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2g3_sono_definiti_come.
+
+?explanans t3:hasCondition ?condition.
+
+?condition t3:hasMetaAttr ?reference
+
+}
+
+}
+
+### 11) Come sono definiti i terreni silenti?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?reference ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2h_sono_definiti_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2h_sono_definiti_come.
+
+?explanans t3:hasReference ?reference.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+}
+
+### 12) Come è definito il prato o pascolo permanente?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?condition ?function ?metafunction
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2i1_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2i1_si_definisce_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2i1_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+?function t3:hasMetaAttr ?metafunction
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2i1_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+FILTER NOT EXISTS
+
+{
+
+?function t3:hasMetaAttr ?metafunction.
+
+}
+
+}
+
+}
+
+### 13) Come sono definite le superfici usate per il pascolo del bestiame?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?function ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2i2_sono_definite_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2i2_sono_definite_come.
+
+?explanans t3:hasFunction ?function.
+
+?function t3:hasMetaAttr ?condition.
+
+}
+
+}
+
+### 14) Come è definito il prato o pascolo arborato?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?function ?explanans ?metric
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2l_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+?explanandum t3:hasFunction ?function.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2l_si_definisce_come.
+
+?explanans t3:hasMetric ?metric.
+
+}
+
+}
+
+### 15) Come è definito il bosco da pascolo?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2m_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2m_si_definisce_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+}
+
+### 16) Come è definita l'arboricoltura da legno?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?function ?explanans ?condition
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2n_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+?explanandum t3:hasFunction ?function
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2n_si_definisce_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+}
+
+### 17) Come è definita La programmazione forestale?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?function
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2o_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2o_si_definisce_come.
+
+?explanans t3:hasFunction ?function
+
+}
+
+}
+
+### 18) Dove sono definite le attività di gestione forestale?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?explanandum ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:hasReference t3:comma_2p.
+
+?explanandum t3:hasReference ?reference.
+
+}
+
+}
+
+### 19) Come è definita l'impresa forestale?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?function ?explanans ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2q_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+?explanandum t3:hasFunction ?function.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2q_si_definisce_come.
+
+?explanans t3:hasReference ?reference
+
+}
+
+}
+
+### 20) Come è definito il bosco di protezione diretta?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?function
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:2r_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:2r_si_definisce_come.
+
+?explanans t3:hasFunction ?function.
+
+}
+
+}
+
+### 21) Dove è definito il materiale di moltiplicazione?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?explanandum ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:hasReference t3:comma_2s.
+
+?explanandum t3:hasReference ?reference.
+
+}
+
+}
+
+### 22) Come viene definito il bosco?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?comma ?explanandum ?explanans ?condition ?metric
+
+WHERE {
+
+{
+
+?explanandum t3:actor t3:3_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:3_si_definisce_come.
+
+?explanans t3:hasCondition ?condition.
+
+}
+
+UNION
+
+{
+
+?explanans t3:undergoer t3:3_si_definisce_come.
+
+?explanans t3:hasMetric ?metric.
+
+}
+
+}
+
+### 23) Dove sono definite le aree assimilate a bosco e le aree escluse dalla definizione di bosco?
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+SELECT ?explanandum ?reference
+
+WHERE {
+
+{
+
+?explanandum t3:hasReference t3:comma_4.
+
+?explanandum t3:hasReference ?reference.
+
+}
+
+}
