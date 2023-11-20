@@ -1,0 +1,16 @@
+<html> <p>
+<span style='margin-left:0px'>### 9) Come vengono definiti i terreni abbandonati caratterizzati dal bosco d'alto fusto?</span><br/>
+<span style='margin-left:0px'></span><br/>
+<span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans ?condition</span><br/>
+<span style='margin-left:0px'>WHERE {</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:2g2_sono_definiti_come .</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:12px'> UNION</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanans t3:undergoer t3:2g2_sono_definiti_come .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:hasCondition ?condition .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:0px'>}</span><br/>
+</p> </html>

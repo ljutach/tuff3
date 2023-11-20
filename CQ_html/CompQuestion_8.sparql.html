@@ -1,0 +1,17 @@
+<html> <p>
+<span style='margin-left:0px'>### 8) Come vengono definiti i terreni abbandonati caratterizzati dal bosco ceduo?</span><br/>
+<span style='margin-left:0px'></span><br/>
+<span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans ?metric ?condition</span><br/>
+<span style='margin-left:0px'>WHERE {</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:2g1_sono_definiti_come .</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:12px'> UNION</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanans t3:undergoer t3:2g1_sono_definiti_come .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:hasMetric ?metric .</span><br/>
+<span style='margin-left:24px'> ?metric t3:hasMetaAttr ?condition .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:0px'>}</span><br/>
+</p> </html>

@@ -1,0 +1,16 @@
+<html> <p>
+<span style='margin-left:0px'>### 1) Quali termini vengono equiparati al termine bosco?</span><br/>
+<span style='margin-left:0px'></span><br/>
+<span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans</span><br/>
+<span style='margin-left:0px'>WHERE {</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:semanticamente_equivalente_a .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:undergoer t3:semanticamente_equivalente_a .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:12px'> UNION</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:semanticamente_equivalente_a .</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:0px'>}</span><br/>
+</p> </html>

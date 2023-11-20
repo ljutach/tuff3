@@ -1,6 +1,6 @@
 ---
 title: "SPARQL queries"
-format: html
+format: pdf
 editor: visual
 ---
 

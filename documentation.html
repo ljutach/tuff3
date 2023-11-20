@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Full Width Pics - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">TUFF3</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDocumentation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Documentation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownDocumentation">
+                        <li><a class="dropdown-item" href="#modeling-approach">Modeling Approach</a></li>
+                        <li><a class="dropdown-item" href="#ontology-learning">Ontology Learning</a></li>
+                        <li><a class="dropdown-item" href="#ontology-download">Ontology Download</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="queries.html">Queries</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('/images/sfondo_index0.jpg')">
+            <div class="text-center my-5">
+                 
+                <h1 class="text-black fs-3 fw-bolder" style="font-size: 50px !important;">Ontology Development</h1>
+            </div>
+        </header>        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                      <h2 class="anchored" data-anchor-id="domain-scope" style="text-align: center;">Modeling Approach</h2>
+ <section id="modeling-approach" class="level3">
+   
+<p style="font-size: 30px;"> 
+<br>
+The approach I employed is inspired by a framework described in <a href="https://drive.google.com/file/d/1DodpXy9wRlfqGkSaGAFczXwCTlfEk7mL/view?usp=sharing"> "Representing and Visualizing Text as Ontologies: A Case from the Patent Domain</a>” This paper proposes a method for representing and visualizing texts as OWL ontologies. The case study centers around patent texts. Due to the widely heterogeneous nature of the terminology used in these kind of texts, the authors adopt an open-domain approach, thereby avoiding any specific predefined conceptual schema. The workflow begins with the automatic extraction of predicate-argument structures (PAS) from raw text. Subsequently, based on the definition of an high-level taxonomy and regardless of specific semantics, the structures are mapped accordingly (Fig.1).</p>
+<figure style="text-align: center;">
+<img src="diagrams/paper_schema.png" alt="Your Image Description" style="width: 100%; max-width: 900px; display: block; margin: auto;">
+<figcaption style="font-style: italic; font-size: 22px;">(Fig. 1) Reference schema</figcaption>
+</figure>
+<br><br>
+<p style="font-size: 30px;">
+A central methodological choice involves the modeling of relations. The latter are encoded not in terms of object properties but as classes, enabling the preservation of relations with arity greater than two. Furthermore, the defined classes - <em>Relation</em>, <em>Entity</em>, and <em>Attribute</em> - and their properties - <em>participant</em>, <em>hasPart</em>, and <em>hasAttr</em> - are aligned with <a href="http://ontologydesignpatterns.org/wiki/Ontology:DOLCE+DnS_Ultralite"> DOLCE+DnS Ultralite </a> top-level ontology to ensure interoperability in a Linked Open Data (LOD) context.</p>
+<p style="font-size: 30px;">
+The schema were further extended by establishing a set of subclasses that adhere to a more fine-grained taxonomic classification of entities denoted by the text. Subsequently, a set of transformation rules is applied in order to convert PAS into OWL assertions.</p>
+<figure style="text-align: center;">
+<img src="images/transformation_rules.png" alt="Your Image Description" style="width: 100%; max-width: 1000px; display: block; margin: auto;">
+<figcaption style="font-style: italic; font-size: 22px;">(Fig. 2) Transformation rules</figcaption>
+</figure>
+<br><br>
+<p style="font-size: 30px;">
+Given the stylistic and structural similarities between patents and legal articles, I deemed it appropriate to model Article 3 of the TUFF using the methodological framework outlined in the referenced paper. However, after formulating competency questions in natural language, I found it more practical for my ends to manually undertake ontology learning rather than relying on an NLP parser for PAS extraction. This decision is driven by the overwhelming abundance of syntactic and semantic information that can be obtained through such tools, unnecessarily complicating the ontology learning process beyond the modeling requirements posed by the competency questions.</p>
+<br><br>
+</section>
+<section id="ontology-learning" class="level3">
+<h2 class="anchored" data-anchor-id="domain-scope" style="text-align: center;">Ontology Learning</h2>
+<p style="font-size: 30px;">
+<br> 
+
+I began by modifying the source text in order to structure the subparagraphs according to a logic which aims at identifying the concepts to be defined and those that defines. The former were classified as <em>Explanandum</em>, the latter as <em>Explanans</em> and both extends <em>Entity</em> from the reference model. Considering that source text consists of a list of definitions, I extended <em>Relation</em> class with two subclasses: <em>Definition</em>, suitable for most of the cases and <em>Semantic Equivalence</em>, handling just the first subparagraphs. <em>Attribute</em> was used to model <em>Explanans</em>, <em>Explanandum</em> and <em>Attribute</em> properties. Six subclasses were defined as <em>Attribute</em> extensions: <em>Synonym, Reference, Condition, Function, Exception</em> and <em>Metric.<br>
+Synonym</em> denotes the synonymy relationship; <em>Reference</em> traces references or sources; <em>Condition</em> defines the conditions of satisfiability; <em>Function</em> represents purposes or uses; <em>Exception</em> identifies elements exempted from certain conditions and <em>Metric</em> models quantitative determinations. Lastly, the reflexive property <em>hasMetaAttr</em> is employed to define attributes of attributes.<br>
+<em>Entity</em> and <em>Relation</em> are connected through <em>participant</em> subproperties such that, with respect to an Relation instance, <em>Explanandum</em> plays the role of <em>actor</em> and <em>Explanans</em> that of <em>undergoer</em>. Here the resulting UML class diagram representation (Fig. 3).
+</p>
+<figure style="text-align: center;">
+<img src="diagrams/class_tree_umlet.png" alt="Your Image Description" style="width: 120%; max-width: 3400px; display: block; margin: auto;">
+<figcaption style="font-style: italic; font-size: 22px;">(Fig. 3) Tuff3 schema</figcaption>
+</figure>
+<br><br>
+                    
+ <section id="ontology-download" class="level3">
+<h2 class="anchored" data-anchor-id="domain-scope" style="text-align: center;">Ontology Download</h2>
+<figure style="text-align: center;">
+<p style="font-size: 30px;">
+<a href="https://drive.google.com/file/d/1L1siFAeyz8Y5Q1bwCG3s4nuQF9Nw6TMh/view?usp=sharing">Turtle</a><br>
+<a href="https://drive.google.com/file/d/1T3DmqfH4JyGzVih0tuH0BZPks_Ttwqpb/view?usp=sharing">RDF/XML</a><br>
+<a href="https://drive.google.com/file/d/1esL9LXlTNdPalPvhkwgVwae4Y7UA04Gp/view?usp=sharing">OWL/XML</a>
+<br><br>
+</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        
+        <!-- Footer-->
+        <style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Tuff3 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
