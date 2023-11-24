@@ -14,10 +14,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 0;
+            overflow-x: auto;
+        }
+
+        .table-container {
+            width: 80%;
+            overflow-x: auto;
         }
 
         table {
-            margin: auto;
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -29,6 +36,9 @@
 </head>
 <body>
 
-<table border='1'><tr><th>comma</th><th>explanandum</th><th>explanans</th><th>function</th><th>exception</th></tr><tr><td>comma_2d</td><td>prodotti_forestali_spontanei_non_legnosi</td><td>None</td><td>None</td><td>None</td></tr><tr><td>None</td><td>None</td><td>prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi</td><td>ad_uso_alimentare_e_non_alimentare</td><td>legno_in_ogni_sua_forma</td></tr></table>
+<div class="table-container">
+
+<table border='1'><tr><th>comma</th><th>explanandum</th><th>explanans</th><th>function</th><th>exception</th></tr><tr><td>comma_2d</td><td>prodotti_forestali_spontanei_non_legnosi</td><td>prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi</td><td>ad_uso_alimentare_e_non_alimentare</td><td>legno_in_ogni_sua_forma</td></tr></table>
+</div>
 </body>
 </html>

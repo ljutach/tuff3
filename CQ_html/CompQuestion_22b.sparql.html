@@ -1,19 +1,13 @@
 <html> <p>
-<span style='margin-left:0px'>### 22) Come viene definito il bosco?</span><br/>
+<span style='font-size:21px'>Come viene definito il bosco?</span><br/>
 <span style='margin-left:0px'></span><br/>
 <span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans ?condition ?metric</span><br/>
 <span style='margin-left:0px'>WHERE {</span><br/>
 <span style='margin-left:12px'> {</span><br/>
 <span style='margin-left:24px'> ?explanandum t3:actor t3:3_si_definisce_come .</span><br/>
 <span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
-<span style='margin-left:12px'> }</span><br/>
-<span style='margin-left:12px'> UNION</span><br/>
-<span style='margin-left:12px'> {</span><br/>
 <span style='margin-left:24px'> ?explanans t3:undergoer t3:3_si_definisce_come .</span><br/>
 <span style='margin-left:24px'> ?explanans t3:hasCondition ?condition .</span><br/>
-<span style='margin-left:12px'> }</span><br/>
-<span style='margin-left:12px'> UNION</span><br/>
-<span style='margin-left:12px'> {</span><br/>
 <span style='margin-left:24px'> ?explanans t3:undergoer t3:3_si_definisce_come .</span><br/>
 <span style='margin-left:24px'> ?explanans t3:hasMetric ?metric .</span><br/>
 <span style='margin-left:12px'> }</span><br/>

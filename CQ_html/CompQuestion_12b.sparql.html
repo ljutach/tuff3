@@ -1,0 +1,17 @@
+<html> <p>
+<span style='font-size:21px'>Come è definito il prato o pascolo permanente?</span><br/>
+<span style='margin-left:0px'></span><br/>
+<span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans ?condition ?function ?metafunction</span><br/>
+<span style='margin-left:0px'>WHERE {</span><br/>
+<span style='margin-left:12px'> {</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:2i1_si_definisce_come .</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:undergoer t3:2i1_si_definisce_come .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:hasCondition ?condition .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:hasFunction ?function .</span><br/>
+<span style='margin-left:24px'> OPTIONAL {</span><br/>
+<span style='margin-left:36px'> ?function t3:hasMetaAttr ?metafunction .</span><br/>
+<span style='margin-left:24px'> }</span><br/>
+<span style='margin-left:12px'> }</span><br/>
+<span style='margin-left:0px'>}</span><br/>
+</p> </html>

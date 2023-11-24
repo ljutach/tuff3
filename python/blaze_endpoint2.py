@@ -35,23 +35,21 @@ def results_to_html_table(results):
 
 # Example usage
 tuff3_path = "/home/ljutach/Documents/unibo/DHDK_magistrale/courses/first_year/Knowledge_Representation_and_Extraction/tuff3/knowledge_base/tuff3.ttl"
-output_html_file = "output23.html"
+query_number = "1"
+
+output_html_file = "output" + query_number + ".html"
+input_file = "/home/ljutach/Documents/unibo/DHDK_magistrale/courses/first_year/Knowledge_Representation_and_Extraction/tuff3/CQ_nat_lang/\
+CompQuestion_" + query_number + ".sparql"
 
 rdf_graph = Graph()
 rdf_graph.parse(tuff3_path, format="turtle")
 
-sparql_query = """
-prefix t3: <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#>
 
-SELECT ?explanandum ?reference
-WHERE {
-{
-?explanandum t3:hasReference t3:comma_4 .
-?explanandum t3:hasReference ?reference .
-}
-}
-"""
+with open(input_file, "r") as sparql_file:
+    sparql_query = "prefix t3: <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#>\n"
+    sparql_query += sparql_file.read()
 
+print(sparql_query)
 results = query_turtle_graph(rdf_graph, sparql_query)
 
 html_table = results_to_html_table(results)

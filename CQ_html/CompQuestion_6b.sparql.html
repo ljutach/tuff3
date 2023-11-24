@@ -1,15 +1,12 @@
 <html> <p>
-<span style='margin-left:0px'>### 17) Come è definita la programmazione forestale?</span><br/>
+<span style='font-size:21px'>Come vengono definite le sistemazioni idraulico-forestali?</span><br/>
 <span style='margin-left:0px'></span><br/>
 <span style='margin-left:0px'>SELECT ?comma ?explanandum ?explanans ?function</span><br/>
 <span style='margin-left:0px'>WHERE {</span><br/>
 <span style='margin-left:12px'> {</span><br/>
-<span style='margin-left:24px'> ?explanandum t3:actor t3:2o_si_definisce_come .</span><br/>
+<span style='margin-left:24px'> ?explanandum t3:actor t3:2e_sono_definite_come .</span><br/>
 <span style='margin-left:24px'> ?explanandum t3:hasReference ?comma .</span><br/>
-<span style='margin-left:12px'> }</span><br/>
-<span style='margin-left:12px'> UNION</span><br/>
-<span style='margin-left:12px'> {</span><br/>
-<span style='margin-left:24px'> ?explanans t3:undergoer t3:2o_si_definisce_come .</span><br/>
+<span style='margin-left:24px'> ?explanans t3:undergoer t3:2e_sono_definite_come .</span><br/>
 <span style='margin-left:24px'> ?explanans t3:hasFunction ?function .</span><br/>
 <span style='margin-left:12px'> }</span><br/>
 <span style='margin-left:0px'>}</span><br/>

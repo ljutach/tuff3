@@ -14,10 +14,17 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 0;
+            overflow-x: auto;
+        }
+
+        .table-container {
+            width: 80%;
+            overflow-x: auto;
         }
 
         table {
-            margin: auto;
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -29,6 +36,9 @@
 </head>
 <body>
 
-<table border='1'><tr><th>comma</th><th>explanandum</th><th>explanans</th><th>condition</th><th>reference</th></tr><tr><td>comma_2a</td><td>patrimonio_forestale_nazionale</td><td>None</td><td>None</td><td>None</td></tr><tr><td>None</td><td>None</td><td>insieme_dei_boschi</td><td>None</td><td>commi_3_e_4</td></tr><tr><td>None</td><td>None</td><td>insieme_delle_aree_assimilate_a_bosco</td><td>None</td><td>definito_in_articolo_4</td></tr><tr><td>None</td><td>None</td><td>insieme_dei_boschi</td><td>di_proprieta_pubblica_e_privata</td><td>None</td></tr><tr><td>None</td><td>None</td><td>insieme_dei_boschi</td><td>radicati_sul_territorio_dello_Stato</td><td>None</td></tr><tr><td>None</td><td>None</td><td>insieme_delle_aree_assimilate_a_bosco</td><td>di_proprieta_pubblica_e_privata</td><td>None</td></tr><tr><td>None</td><td>None</td><td>insieme_delle_aree_assimilate_a_bosco</td><td>radicati_sul_territorio_dello_Stato</td><td>None</td></tr></table>
+<div class="table-container">
+
+<table border='1'><tr><th>comma</th><th>explanandum</th><th>explanans</th><th>condition</th></tr><tr><td>comma_2a</td><td>patrimonio_forestale_nazionale</td><td>insieme_dei_boschi</td><td>di_proprieta_pubblica_e_privata</td></tr><tr><td>comma_2a</td><td>patrimonio_forestale_nazionale</td><td>insieme_dei_boschi</td><td>radicati_sul_territorio_dello_Stato</td></tr><tr><td>comma_2a</td><td>patrimonio_forestale_nazionale</td><td>insieme_delle_aree_assimilate_a_bosco</td><td>di_proprieta_pubblica_e_privata</td></tr><tr><td>comma_2a</td><td>patrimonio_forestale_nazionale</td><td>insieme_delle_aree_assimilate_a_bosco</td><td>radicati_sul_territorio_dello_Stato</td></tr></table>
+</div>
 </body>
 </html>
