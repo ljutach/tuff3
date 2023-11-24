@@ -1,0 +1,2364 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3">
+    <Prefix name="" IRI="http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explanandum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explanans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttr"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasException"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetric"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttributeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConditionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExceptionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFunctionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMetaAttrOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMetricOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferenceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partecipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergoer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#underwent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFullText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ad_uso_alimentare_e_non_alimentare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arboricoltura_da_legno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aree_assimilate_a_bosco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aree_escluse_dalla_definizione_di_bosco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#attivita_di_gestione_forestale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boschi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bosco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bosco_da_pascolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bosco_di_protezione_diretta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carattere_permanente_o_transitorio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#carreggiata_unica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coltivazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2h"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2l"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2m"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2n"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2o"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2p"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2q"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2r"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_2s"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comma_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#copertura_arborea_forestale_inferiore_al_20_per_cento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#copertura_arborea_forestale_maggiore_del_20_per_cento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#creazione_di_nuove_foreste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#definite_in_articolo_7_comma_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#definiti_alla_lettera_g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#definito_in_articolo_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#definito_in_articolo_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#di_cui_in_articolo_10_comma_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#di_proprieta_pubblica_e_privata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#di_quanto_previsto_alla_lettera_d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#estensione_non_inferiore_ai_2.000_metri_quadri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fondo_prevalentemente_non_asfaltato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#foresta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#garantire_il_governo_del_territorio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gestione_attiva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gestione_forestale_sostenibile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#impianto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#impresa_forestale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_dei_boschi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_aree_assimilate_a_bosco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_nel_registro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_strategie_e_degli_interventi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_superfici"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interessano_o_attraversano_aree_boscate_e_pascolive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#larghezza_media_non_inferiore_a_20_metri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#legno_in_ogni_sua_forma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#materiale_di_moltiplicazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pascolo_del_bestiame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patrimonio_forestale_nazionale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pratiche_selvicolturali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prato_o_pascolo_arborato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prato_o_pascolo_permanente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prevenzione_di_incendi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prevenzione_ed_estinzione_degli_incendi_boschivi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prodotti_forestali_spontanei_non_legnosi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#produrre_legno_a_uso_industriale_o_energetico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#produzione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#programmazione_forestale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#radicati_sul_territorio_dello_Stato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#selva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#senza_comportare_danni_ad_altri_ecosistemi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#senza_interventi_selvicolturali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sistemazioni_idraulico_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superfici"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superfici_contenenti_specie_arbustive_o_arboree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superfici_in_attualita_di_coltura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superfici_usate_per_il_pascolo_di_bestiame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#superficie_erbacea_non_predominante"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_bosco_ceduo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_colture_agricole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_agricoli_e_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_forestali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#terreni_silenti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#trattamento_dei_boschi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#utilizzazione_dei_boschi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#valorizzare_la_molteplicita_delle_funzioni_del_bosco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#viabilita_forestale_e_silvo_pastorale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vietate_al_transito_ordinario"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2a_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2b_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2c_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2d_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2e_sono_definite_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2f_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2g1_sono_definiti_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2g2_sono_definiti_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2g3_sono_definiti_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2h_sono_definiti_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2i1_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2i2_sono_definite_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2l_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2m_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2n_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2o_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2q_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2r_si_definisce_come"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_si_definisce_come"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Attribute"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Definition"/>
+        <Class IRI="#Relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entity"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exception"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanandum"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanans"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metric"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference"/>
+        <Class IRI="#Attribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#Entity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Attribute"/>
+        <Class IRI="#Relation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Exception"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Function"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Metric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Condition"/>
+        <Class IRI="#Reference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Exception"/>
+        <Class IRI="#Function"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Exception"/>
+        <Class IRI="#Metric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Exception"/>
+        <Class IRI="#Reference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Explanandum"/>
+        <Class IRI="#Explanans"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Function"/>
+        <Class IRI="#Metric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Function"/>
+        <Class IRI="#Reference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Metric"/>
+        <Class IRI="#Reference"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Exception"/>
+        <NamedIndividual IRI="#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#ad_uso_alimentare_e_non_alimentare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#arboricoltura_da_legno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#aree_assimilate_a_bosco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#aree_escluse_dalla_definizione_di_bosco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#attivita_di_gestione_forestale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#boschi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#bosco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#bosco_da_pascolo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#bosco_di_protezione_diretta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#carattere_permanente_o_transitorio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#carreggiata_unica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#coltivazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2h"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2i"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2l"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2m"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2n"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2o"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2p"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2q"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2r"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_2s"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#comma_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#copertura_arborea_forestale_inferiore_al_20_per_cento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#copertura_arborea_forestale_maggiore_del_20_per_cento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#creazione_di_nuove_foreste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#definite_in_articolo_7_comma_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#definiti_alla_lettera_g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#definito_in_articolo_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#definito_in_articolo_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#di_cui_in_articolo_10_comma_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#di_proprieta_pubblica_e_privata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#di_quanto_previsto_alla_lettera_d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#estensione_non_inferiore_ai_2.000_metri_quadri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#fondo_prevalentemente_non_asfaltato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#foresta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#garantire_il_governo_del_territorio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#gestione_forestale_sostenibile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#impianto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#impresa_forestale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_dei_boschi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_aree_assimilate_a_bosco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_nel_registro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_strategie_e_degli_interventi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_superfici"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#interessano_o_attraversano_aree_boscate_e_pascolive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Metric"/>
+        <NamedIndividual IRI="#larghezza_media_non_inferiore_a_20_metri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exception"/>
+        <NamedIndividual IRI="#legno_in_ogni_sua_forma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#materiale_di_moltiplicazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#pascolo_del_bestiame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#patrimonio_forestale_nazionale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#pratiche_selvicolturali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#prato_o_pascolo_arborato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#prato_o_pascolo_permanente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#prevenzione_di_incendi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#prevenzione_ed_estinzione_degli_incendi_boschivi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reference"/>
+        <NamedIndividual IRI="#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#prodotti_forestali_spontanei_non_legnosi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#produrre_legno_a_uso_industriale_o_energetico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#produzione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#programmazione_forestale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#radicati_sul_territorio_dello_Stato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#selva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#senza_comportare_danni_ad_altri_ecosistemi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#senza_interventi_selvicolturali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#sistemazioni_idraulico_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#superfici"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#superfici_contenenti_specie_arbustive_o_arboree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#superfici_in_attualita_di_coltura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#superfici_usate_per_il_pascolo_di_bestiame"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#superficie_erbacea_non_predominante"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#terreni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_bosco_ceduo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_colture_agricole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#terreni_agricoli_e_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanans"/>
+        <NamedIndividual IRI="#terreni_forestali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#terreni_silenti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#trattamento_dei_boschi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#utilizzazione_dei_boschi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#valorizzare_la_molteplicita_delle_funzioni_del_bosco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanandum"/>
+        <NamedIndividual IRI="#viabilita_forestale_e_silvo_pastorale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Condition"/>
+        <NamedIndividual IRI="#vietate_al_transito_ordinario"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#1_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2a_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2b_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2c_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2d_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2e_sono_definite_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2f_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2g1_sono_definiti_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2g2_sono_definiti_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2g3_sono_definiti_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2h_sono_definiti_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2i1_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2i2_sono_definite_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2l_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2m_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2n_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2o_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2q_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#2r_si_definisce_come"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#3_si_definisce_come"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#foresta"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#selva"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#gestione_attiva"/>
+        <NamedIndividual IRI="#gestione_forestale_sostenibile"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#arboricoltura_da_legno"/>
+        <NamedIndividual IRI="#2n_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#arboricoltura_da_legno"/>
+        <NamedIndividual IRI="#comma_2n"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#aree_assimilate_a_bosco"/>
+        <NamedIndividual IRI="#comma_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#aree_assimilate_a_bosco"/>
+        <NamedIndividual IRI="#definito_in_articolo_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#aree_escluse_dalla_definizione_di_bosco"/>
+        <NamedIndividual IRI="#comma_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#aree_escluse_dalla_definizione_di_bosco"/>
+        <NamedIndividual IRI="#definito_in_articolo_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#attivita_di_gestione_forestale"/>
+        <NamedIndividual IRI="#comma_2p"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#attivita_di_gestione_forestale"/>
+        <NamedIndividual IRI="#definite_in_articolo_7_comma_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#boschi"/>
+        <NamedIndividual IRI="#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#boschi"/>
+        <NamedIndividual IRI="#2g2_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#1_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#3_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#comma_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#bosco"/>
+        <NamedIndividual IRI="#comma_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#bosco_da_pascolo"/>
+        <NamedIndividual IRI="#2m_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#bosco_da_pascolo"/>
+        <NamedIndividual IRI="#comma_2m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#bosco_di_protezione_diretta"/>
+        <NamedIndividual IRI="#2r_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#bosco_di_protezione_diretta"/>
+        <NamedIndividual IRI="#comma_2r"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+        <NamedIndividual IRI="#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+        <NamedIndividual IRI="#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+        <NamedIndividual IRI="#produrre_legno_a_uso_industriale_o_energetico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#coltivazioni_di_impianti_arborei"/>
+        <NamedIndividual IRI="#2n_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#foresta"/>
+        <NamedIndividual IRI="#1_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale"/>
+        <NamedIndividual IRI="#senza_comportare_danni_ad_altri_ecosistemi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#gestione_forestale_sostenibile"/>
+        <NamedIndividual IRI="#2b_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#gestione_forestale_sostenibile"/>
+        <NamedIndividual IRI="#comma_2b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali"/>
+        <NamedIndividual IRI="#senza_interventi_selvicolturali"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#impresa_forestale"/>
+        <NamedIndividual IRI="#2q_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#impresa_forestale"/>
+        <NamedIndividual IRI="#comma_2q"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate"/>
+        <NamedIndividual IRI="#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#insieme_dei_boschi"/>
+        <NamedIndividual IRI="#di_proprieta_pubblica_e_privata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#insieme_dei_boschi"/>
+        <NamedIndividual IRI="#radicati_sul_territorio_dello_Stato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_dei_boschi"/>
+        <NamedIndividual IRI="#2a_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#insieme_delle_aree_assimilate_a_bosco"/>
+        <NamedIndividual IRI="#di_proprieta_pubblica_e_privata"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#insieme_delle_aree_assimilate_a_bosco"/>
+        <NamedIndividual IRI="#radicati_sul_territorio_dello_Stato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_aree_assimilate_a_bosco"/>
+        <NamedIndividual IRI="#2a_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#coltivazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#impianto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#prevenzione_di_incendi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#produzione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#trattamento_dei_boschi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#utilizzazione_dei_boschi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi"/>
+        <NamedIndividual IRI="#2c_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#valorizzare_la_molteplicita_delle_funzioni_del_bosco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_azioni_selvicolturali"/>
+        <NamedIndividual IRI="#2b_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali"/>
+        <NamedIndividual IRI="#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali"/>
+        <NamedIndividual IRI="#di_cui_in_articolo_10_comma_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali"/>
+        <NamedIndividual IRI="#2q_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_nel_registro"/>
+        <NamedIndividual IRI="#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_nel_registro"/>
+        <NamedIndividual IRI="#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_imprese_iscritte_nel_registro"/>
+        <NamedIndividual IRI="#2q_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_strategie_e_degli_interventi"/>
+        <NamedIndividual IRI="#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_strategie_e_degli_interventi"/>
+        <NamedIndividual IRI="#creazione_di_nuove_foreste"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_strategie_e_degli_interventi"/>
+        <NamedIndividual IRI="#2o_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#insieme_delle_superfici"/>
+        <NamedIndividual IRI="#superficie_erbacea_non_predominante"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_superfici"/>
+        <NamedIndividual IRI="#2m_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui"/>
+        <NamedIndividual IRI="#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui"/>
+        <NamedIndividual IRI="#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui"/>
+        <NamedIndividual IRI="#2r_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio"/>
+        <NamedIndividual IRI="#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio"/>
+        <NamedIndividual IRI="#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio"/>
+        <NamedIndividual IRI="#2e_sono_definite_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#materiale_di_moltiplicazione"/>
+        <NamedIndividual IRI="#comma_2s"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#materiale_di_moltiplicazione"/>
+        <NamedIndividual IRI="#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#patrimonio_forestale_nazionale"/>
+        <NamedIndividual IRI="#2a_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#patrimonio_forestale_nazionale"/>
+        <NamedIndividual IRI="#comma_2a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#pratiche_selvicolturali"/>
+        <NamedIndividual IRI="#2c_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#pratiche_selvicolturali"/>
+        <NamedIndividual IRI="#comma_2c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#prato_o_pascolo_arborato"/>
+        <NamedIndividual IRI="#2l_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#prato_o_pascolo_arborato"/>
+        <NamedIndividual IRI="#comma_2l"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#prato_o_pascolo_permanente"/>
+        <NamedIndividual IRI="#2i1_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#prato_o_pascolo_permanente"/>
+        <NamedIndividual IRI="#comma_2i"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasException"/>
+        <NamedIndividual IRI="#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi"/>
+        <NamedIndividual IRI="#legno_in_ogni_sua_forma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi"/>
+        <NamedIndividual IRI="#ad_uso_alimentare_e_non_alimentare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi"/>
+        <NamedIndividual IRI="#2d_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#prodotti_forestali_spontanei_non_legnosi"/>
+        <NamedIndividual IRI="#2d_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#prodotti_forestali_spontanei_non_legnosi"/>
+        <NamedIndividual IRI="#comma_2d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#produzione"/>
+        <NamedIndividual IRI="#di_quanto_previsto_alla_lettera_d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#programmazione_forestale"/>
+        <NamedIndividual IRI="#2o_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#programmazione_forestale"/>
+        <NamedIndividual IRI="#comma_2o"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#carattere_permanente_o_transitorio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#interessano_o_attraversano_aree_boscate_e_pascolive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#vietate_al_transito_ordinario"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#garantire_il_governo_del_territorio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#prevenzione_ed_estinzione_degli_incendi_boschivi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#carreggiata_unica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#fondo_prevalentemente_non_asfaltato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali"/>
+        <NamedIndividual IRI="#2f_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#selva"/>
+        <NamedIndividual IRI="#1_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#sistemazioni_idraulico_forestali"/>
+        <NamedIndividual IRI="#2e_sono_definite_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#sistemazioni_idraulico_forestali"/>
+        <NamedIndividual IRI="#comma_2e"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni"/>
+        <NamedIndividual IRI="#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#superfici"/>
+        <NamedIndividual IRI="#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#superfici"/>
+        <NamedIndividual IRI="#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#superfici"/>
+        <NamedIndividual IRI="#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#superfici"/>
+        <NamedIndividual IRI="#2i1_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#superfici_contenenti_specie_arbustive_o_arboree"/>
+        <NamedIndividual IRI="#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#superfici_contenenti_specie_arbustive_o_arboree"/>
+        <NamedIndividual IRI="#2i2_sono_definite_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+        <NamedIndividual IRI="#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+        <NamedIndividual IRI="#copertura_arborea_forestale_maggiore_del_20_per_cento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+        <NamedIndividual IRI="#estensione_non_inferiore_ai_2.000_metri_quadri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva"/>
+        <NamedIndividual IRI="#3_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFunction"/>
+        <NamedIndividual IRI="#superfici_in_attualita_di_coltura"/>
+        <NamedIndividual IRI="#pascolo_del_bestiame"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#superfici_in_attualita_di_coltura"/>
+        <NamedIndividual IRI="#copertura_arborea_forestale_inferiore_al_20_per_cento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#superfici_in_attualita_di_coltura"/>
+        <NamedIndividual IRI="#2l_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#superfici_usate_per_il_pascolo_di_bestiame"/>
+        <NamedIndividual IRI="#2i2_sono_definite_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#superfici_usate_per_il_pascolo_di_bestiame"/>
+        <NamedIndividual IRI="#comma_2i"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#terreni"/>
+        <NamedIndividual IRI="#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#terreni"/>
+        <NamedIndividual IRI="#2g3_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_bosco_ceduo"/>
+        <NamedIndividual IRI="#2g1_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_bosco_ceduo"/>
+        <NamedIndividual IRI="#comma_2g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_colture_agricole"/>
+        <NamedIndividual IRI="#2g3_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasException"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_colture_agricole"/>
+        <NamedIndividual IRI="#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_da_colture_agricole"/>
+        <NamedIndividual IRI="#comma_2g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto"/>
+        <NamedIndividual IRI="#2g2_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto"/>
+        <NamedIndividual IRI="#comma_2g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="#terreni_agricoli_e_forestali"/>
+        <NamedIndividual IRI="#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#terreni_agricoli_e_forestali"/>
+        <NamedIndividual IRI="#definiti_alla_lettera_g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#terreni_agricoli_e_forestali"/>
+        <NamedIndividual IRI="#2h_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetric"/>
+        <NamedIndividual IRI="#terreni_forestali"/>
+        <NamedIndividual IRI="#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoer"/>
+        <NamedIndividual IRI="#terreni_forestali"/>
+        <NamedIndividual IRI="#2g1_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#terreni_silenti"/>
+        <NamedIndividual IRI="#2h_sono_definiti_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#terreni_silenti"/>
+        <NamedIndividual IRI="#comma_2h"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <NamedIndividual IRI="#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale"/>
+        <NamedIndividual IRI="#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actor"/>
+        <NamedIndividual IRI="#viabilita_forestale_e_silvo_pastorale"/>
+        <NamedIndividual IRI="#2f_si_definisce_come"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReference"/>
+        <NamedIndividual IRI="#viabilita_forestale_e_silvo_pastorale"/>
+        <NamedIndividual IRI="#comma_2f"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_1"/>
+        <Literal>I termini bosco, foresta e selva sono equiparati.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2a"/>
+        <Literal>patrimonio forestale nazionale: l’insieme dei boschi, di cui ai commi 3 e 4, e delle aree assimilate a bosco, di cui all’articolo 4, radicati sul territorio dello Stato, di proprietà pubblica e privata;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2b"/>
+        <Literal>gestione forestale sostenibile o gestione attiva: insieme delle azioni selvicolturali volte a valorizzare la molteplicità delle funzioni del bosco, a garantire la produzione sostenibile di beni e servizi ecosistemici, nonche’ una gestione e uso delle foreste e dei terreni forestali nelle forme e ad un tasso di utilizzo che consenta di mantenere la loro biodiversità, produttività, rinnovazione, vitalita’ e potenzialita’ di adempiere, ora e in futuro, a rilevanti funzioni ecologiche, economiche e sociali a livello locale, nazionale e globale, senza comportare danni ad altri ecosistemi;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2c"/>
+        <Literal>pratiche selvicolturali: i tagli, le cure e gli interventi volti all’impianto, alla coltivazione, alla prevenzione di incendi, al trattamento e all’utilizzazione dei boschi e alla produzione di quanto previsto alla lettera d);</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2d"/>
+        <Literal>prodotti forestali spontanei non legnosi: tutti i prodotti di origine biologica ad uso alimentare e ad uso non alimentare, derivati dalla foresta o da altri terreni boscati e da singoli alberi, escluso il legno in ogni sua forma;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2e"/>
+        <Literal>sistemazioni idraulico-forestali: gli interventie le opere di carattere intensivo ed estensivo attuati, anche congiuntamente, sul territorio, al fine di stabilizzare, consolidare e difendere i terreni dal dissesto idrogeologico e di migliorare l’efficienza funzionale dei bacini idrografici e dei sistemi forestali;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2f"/>
+        <Literal>viabilità forestale e silvo-pastorale: la rete di strade, piste, vie di esbosco, piazzole e opere forestali aventi carattere permanente o transitorio, comunque vietate al transito ordinario, con fondo prevalentemente non asfaltato e a carreggiata unica, che interessano o attraversano le aree boscate e pascolive, funzionali a garantire il governo del territorio, la tutela, la gestione e la valorizzazione ambientale, economica e paesaggistica del patrimonio forestale, nonché le attivita’ di prevenzione ed estinzione degli incendi boschivi;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2g"/>
+        <Literal>terreni abbandonati: fatto salvo quanto previsto dalle normative regionali vigenti, i terreni forestali nei quali i boschi cedui hanno superato, senza interventi selvicolturali, almeno della metà il turno minimo fissato dalle norme forestali regionali, ed i boschi d’alto fusto in cui non siano stati attuati interventi di sfollo o diradamento negli ultimi venti anni, nonché i terreni agricoli sui quali non sia stata esercitata attività agricola da almeno tre anni, in base ai principi e alle definizioni di cui al regolamento (UE) n. 1307/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013 e relative disposizioni nazionali di attuazione, ad esclusione dei terreni sottoposti ai vincoli di destinazione d’uso;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2h"/>
+        <Literal>terreni silenti: i terreni agricoli e forestali di cui alla lettera g) per i quali i proprietari non siano individuabili o reperibili a seguito di apposita istruttoria;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2i"/>
+        <Literal>prato o pascolo permanente: le superfici non comprese nell’avvicendamento delle colture dell’azienda da almeno cinque anni, in attualità di coltura per la coltivazione di erba e altre piante erbacee da foraggio, spontanee o coltivate, destinate ad essere sfalciate, affienate o insilate una o più volte nell’anno, o sulle quali è svolta attività agricola di mantenimento, o usate per il pascolo del bestiame, che possono comprendere altre specie, segnatamente arbustive o arboree, utilizzabili per il pascolo o che producano mangime animale, purché l’erba e le altre piante erbaceeda foraggio restino predominanti;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2l"/>
+        <Literal>prato o pascolo arborato: le superfici in attualità di coltura con copertura arborea forestale inferiore al 20 per cento, impiegate principalmente per il pascolo del bestiame;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2m"/>
+        <Literal>bosco da pascolo: le superfici a bosco destinate tradizionalmente anche a pascolo con superficie erbacea non predominante;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2n"/>
+        <Literal>arboricoltura da legno: la coltivazione di impianti arborei in terreni non boscati o soggetti ad ordinaria lavorazione agricola, finalizzata prevalentemente alla produzione di legno a uso industriale o energetico e che e’ liberamente reversibile al termine del ciclo colturale;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2o"/>
+        <Literal>programmazione forestale: l’insieme delle strategie e degli interventi volti, nel lungo periodo, ad assicurare la tutela, la valorizzazione, la gestione attiva del patrimonio forestale o la creazione di nuove foreste;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2p"/>
+        <Literal>attività di gestione forestale: le attività descritte nell’articolo 7, comma 1;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2q"/>
+        <Literal>impresa forestale: impresa iscritta nel registro di cui all’articolo 8 della legge 29 dicembre 1993, n. 580, che esercita prevalentemente attività di gestione forestale, fornendo anche servizi in ambito forestale e ambientale e che risulti iscritta negli elenchi o negli albi delle imprese forestali regionali di cui all’articolo 10, comma 2;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2r"/>
+        <Literal>bosco di protezione diretta: superficie boscata che per la propria speciale ubicazione svolge una funzione di protezione diretta di persone, beni e infrastrutture da pericoli naturali quali valanghe, caduta massi, scivolamenti superficiali, lave torrentizie e altro, impedendo l’evento o mitigandone l’effetto;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_2s"/>
+        <Literal>materiale di moltiplicazione: il materiale di cui all’articolo 2, comma 1, lettera a), del decreto legislativo 10 novembre 2003, n. 386.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_3"/>
+        <Literal>Per le materie di competenza esclusiva dello Stato, sono definite bosco le superfici coperte da vegetazione forestale arborea, associata o meno a quella arbustiva, di origine naturale o artificiale in qualsiasi stadio di sviluppo ed evoluzione, con estensione non inferiore ai 2.000 metri quadri, larghezza media non inferiore a 20 metri e con copertura arborea forestale maggiore del 20 per cento.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullText"/>
+        <NamedIndividual IRI="#comma_4"/>
+        <Literal>Le regioni, per quanto di loro competenza e in relazione alle proprie esigenze e caratteristiche territoriali, ecologiche e socio-economiche, possono adottare una definizione integrativa di bosco rispetto a quella dettata al comma 3, nonché definizioni integrative di aree assimilate a bosco e di aree escluse dalla definizione di bosco di cui, rispettivamente, agli articoli 4 e 5, purché non venga diminuito il livello di tutela e conservazione così assicurato alle foreste come presidio fondamentale della qualità della vita.</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#actedIn"/>
+        <ObjectProperty IRI="#partecipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#actor"/>
+        <ObjectProperty IRI="#partecipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAttr"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasException"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFunction"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMetric"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReference"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttributeOf"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConditionOf"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExceptionOf"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFunctionOf"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMetaAttrOf"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMetricOf"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isReferenceOf"/>
+        <ObjectProperty IRI="#hasAttr"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#undergoer"/>
+        <ObjectProperty IRI="#partecipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#underwent"/>
+        <ObjectProperty IRI="#partecipant"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#actedIn"/>
+        <ObjectProperty IRI="#actor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAttr"/>
+        <ObjectProperty IRI="#isAttributeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCondition"/>
+        <ObjectProperty IRI="#isConditionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasException"/>
+        <ObjectProperty IRI="#isExceptionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFunction"/>
+        <ObjectProperty IRI="#isFunctionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <ObjectProperty IRI="#isMetaAttrOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMetric"/>
+        <ObjectProperty IRI="#isMetricOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasReference"/>
+        <ObjectProperty IRI="#isReferenceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#undergoer"/>
+        <ObjectProperty IRI="#underwent"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actedIn"/>
+        <Class IRI="#Relation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actor"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAttr"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasException"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetric"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReference"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttributeOf"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConditionOf"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExceptionOf"/>
+        <Class IRI="#Exception"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFunctionOf"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMetaAttrOf"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMetricOf"/>
+        <Class IRI="#Metric"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isReferenceOf"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partecipant"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#undergoer"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#underwent"/>
+        <Class IRI="#Relation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actedIn"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actor"/>
+        <Class IRI="#Relation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttr"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasException"/>
+        <Class IRI="#Exception"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaAttr"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetric"/>
+        <Class IRI="#Metric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReference"/>
+        <Class IRI="#Reference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttributeOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConditionOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExceptionOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFunctionOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMetaAttrOf"/>
+        <Class IRI="#Attribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMetricOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isReferenceOf"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partecipant"/>
+        <Class IRI="#Relation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#undergoer"/>
+        <Class IRI="#Relation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#underwent"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
+        <ObjectProperty IRI="#partecipant"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#actor"/>
+        <ObjectProperty IRI="#undergoer"/>
+    </DisjointObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFullText"/>
+        <Class IRI="#Reference"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFullText"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attribute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Condition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An Attribute specifying a condition to be fulfilled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Definition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">A predicate connecting an Explanandum to an Explanans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Exception</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An Attribute specifying an unfulfilled condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Explanandum</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">The subject of a definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Explanans</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">A word or a set of words defining an Explanandum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An Attribute specifying an expected role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metric</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An Attribute specifying a quantitative dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reference</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An Attribute specifying a source</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyRange>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

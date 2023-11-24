@@ -1,0 +1,1755 @@
+[ {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Attribute specifying a condition to be fulfilled"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "A predicate connecting an Explanandum to an Explanans"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Attribute specifying an unfulfilled condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "The subject of a definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "A word or a set of words defining an Explanandum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Attribute specifying an expected role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Attribute specifying a quantitative dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "An Attribute specifying a source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "I termini bosco, foresta e selva sono equiparati."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "patrimonio forestale nazionale: l’insieme dei boschi, di cui ai commi 3 e 4, e delle aree assimilate a bosco, di cui all’articolo 4, radicati sul territorio dello Stato, di proprietà pubblica e privata;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "gestione forestale sostenibile o gestione attiva: insieme delle azioni selvicolturali volte a valorizzare la molteplicità delle funzioni del bosco, a garantire la produzione sostenibile di beni e servizi ecosistemici, nonche’ una gestione e uso delle foreste e dei terreni forestali nelle forme e ad un tasso di utilizzo che consenta di mantenere la loro biodiversità, produttività, rinnovazione, vitalita’ e potenzialita’ di adempiere, ora e in futuro, a rilevanti funzioni ecologiche, economiche e sociali a livello locale, nazionale e globale, senza comportare danni ad altri ecosistemi;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "pratiche selvicolturali: i tagli, le cure e gli interventi volti all’impianto, alla coltivazione, alla prevenzione di incendi, al trattamento e all’utilizzazione dei boschi e alla produzione di quanto previsto alla lettera d);"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "prodotti forestali spontanei non legnosi: tutti i prodotti di origine biologica ad uso alimentare e ad uso non alimentare, derivati dalla foresta o da altri terreni boscati e da singoli alberi, escluso il legno in ogni sua forma;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "sistemazioni idraulico-forestali: gli interventie le opere di carattere intensivo ed estensivo attuati, anche congiuntamente, sul territorio, al fine di stabilizzare, consolidare e difendere i terreni dal dissesto idrogeologico e di migliorare l’efficienza funzionale dei bacini idrografici e dei sistemi forestali;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "viabilità forestale e silvo-pastorale: la rete di strade, piste, vie di esbosco, piazzole e opere forestali aventi carattere permanente o transitorio, comunque vietate al transito ordinario, con fondo prevalentemente non asfaltato e a carreggiata unica, che interessano o attraversano le aree boscate e pascolive, funzionali a garantire il governo del territorio, la tutela, la gestione e la valorizzazione ambientale, economica e paesaggistica del patrimonio forestale, nonché le attivita’ di prevenzione ed estinzione degli incendi boschivi;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "terreni abbandonati: fatto salvo quanto previsto dalle normative regionali vigenti, i terreni forestali nei quali i boschi cedui hanno superato, senza interventi selvicolturali, almeno della metà il turno minimo fissato dalle norme forestali regionali, ed i boschi d’alto fusto in cui non siano stati attuati interventi di sfollo o diradamento negli ultimi venti anni, nonché i terreni agricoli sui quali non sia stata esercitata attività agricola da almeno tre anni, in base ai principi e alle definizioni di cui al regolamento (UE) n. 1307/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013 e relative disposizioni nazionali di attuazione, ad esclusione dei terreni sottoposti ai vincoli di destinazione d’uso;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "terreni silenti: i terreni agricoli e forestali di cui alla lettera g) per i quali i proprietari non siano individuabili o reperibili a seguito di apposita istruttoria;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "prato o pascolo permanente: le superfici non comprese nell’avvicendamento delle colture dell’azienda da almeno cinque anni, in attualità di coltura per la coltivazione di erba e altre piante erbacee da foraggio, spontanee o coltivate, destinate ad essere sfalciate, affienate o insilate una o più volte nell’anno, o sulle quali è svolta attività agricola di mantenimento, o usate per il pascolo del bestiame, che possono comprendere altre specie, segnatamente arbustive o arboree, utilizzabili per il pascolo o che producano mangime animale, purché l’erba e le altre piante erbaceeda foraggio restino predominanti;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "prato o pascolo arborato: le superfici in attualità di coltura con copertura arborea forestale inferiore al 20 per cento, impiegate principalmente per il pascolo del bestiame;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "bosco da pascolo: le superfici a bosco destinate tradizionalmente anche a pascolo con superficie erbacea non predominante;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "arboricoltura da legno: la coltivazione di impianti arborei in terreni non boscati o soggetti ad ordinaria lavorazione agricola, finalizzata prevalentemente alla produzione di legno a uso industriale o energetico e che e’ liberamente reversibile al termine del ciclo colturale;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "programmazione forestale: l’insieme delle strategie e degli interventi volti, nel lungo periodo, ad assicurare la tutela, la valorizzazione, la gestione attiva del patrimonio forestale o la creazione di nuove foreste;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "attività di gestione forestale: le attività descritte nell’articolo 7, comma 1;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "impresa forestale: impresa iscritta nel registro di cui all’articolo 8 della legge 29 dicembre 1993, n. 580, che esercita prevalentemente attività di gestione forestale, fornendo anche servizi in ambito forestale e ambientale e che risulti iscritta negli elenchi o negli albi delle imprese forestali regionali di cui all’articolo 10, comma 2;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "bosco di protezione diretta: superficie boscata che per la propria speciale ubicazione svolge una funzione di protezione diretta di persone, beni e infrastrutture da pericoli naturali quali valanghe, caduta massi, scivolamenti superficiali, lave torrentizie e altro, impedendo l’evento o mitigandone l’effetto;"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "materiale di moltiplicazione: il materiale di cui all’articolo 2, comma 1, lettera a), del decreto legislativo 10 novembre 2003, n. 386."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "Per le materie di competenza esclusiva dello Stato, sono definite bosco le superfici coperte da vegetazione forestale arborea, associata o meno a quella arbustiva, di origine naturale o artificiale in qualsiasi stadio di sviluppo ed evoluzione, con estensione non inferiore ai 2.000 metri quadri, larghezza media non inferiore a 20 metri e con copertura arborea forestale maggiore del 20 per cento."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText" : [ {
+    "@value" : "Le regioni, per quanto di loro competenza e in relazione alle proprie esigenze e caratteristiche territoriali, ecologiche e socio-economiche, possono adottare una definizione integrativa di bosco rispetto a quella dettata al comma 3, nonché definizioni integrative di aree assimilate a bosco e di aree escluse dalla definizione di bosco di cui, rispettivamente, agli articoli 4 e 5, purché non venga diminuito il livello di tutela e conservazione così assicurato alle foreste come presidio fondamentale della qualità della vita."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_attiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#larghezza_media_non_inferiore_a_20_metri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento"
+  }, {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come"
+  } ],
+  "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+} ]

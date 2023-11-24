@@ -1,0 +1,1015 @@
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "An Attribute specifying a condition to be fulfilled"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> <http://www.w3.org/2000/01/rdf-schema#comment> "A predicate connecting an Explanandum to an Explanans"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> <http://www.w3.org/2000/01/rdf-schema#comment> "An Attribute specifying an unfulfilled condition"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of a definition"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> <http://www.w3.org/2000/01/rdf-schema#comment> "A word or a set of words defining an Explanandum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "An Attribute specifying an expected role"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "An Attribute specifying a quantitative dimension"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> <http://www.w3.org/2000/01/rdf-schema#comment> "An Attribute specifying a source"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "I termini bosco, foresta e selva sono equiparati." .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "patrimonio forestale nazionale: l’insieme dei boschi, di cui ai commi 3 e 4, e delle aree assimilate a bosco, di cui all’articolo 4, radicati sul territorio dello Stato, di proprietà pubblica e privata;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "gestione forestale sostenibile o gestione attiva: insieme delle azioni selvicolturali volte a valorizzare la molteplicità delle funzioni del bosco, a garantire la produzione sostenibile di beni e servizi ecosistemici, nonche’ una gestione e uso delle foreste e dei terreni forestali nelle forme e ad un tasso di utilizzo che consenta di mantenere la loro biodiversità, produttività, rinnovazione, vitalita’ e potenzialita’ di adempiere, ora e in futuro, a rilevanti funzioni ecologiche, economiche e sociali a livello locale, nazionale e globale, senza comportare danni ad altri ecosistemi;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "pratiche selvicolturali: i tagli, le cure e gli interventi volti all’impianto, alla coltivazione, alla prevenzione di incendi, al trattamento e all’utilizzazione dei boschi e alla produzione di quanto previsto alla lettera d);" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "prodotti forestali spontanei non legnosi: tutti i prodotti di origine biologica ad uso alimentare e ad uso non alimentare, derivati dalla foresta o da altri terreni boscati e da singoli alberi, escluso il legno in ogni sua forma;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "sistemazioni idraulico-forestali: gli interventie le opere di carattere intensivo ed estensivo attuati, anche congiuntamente, sul territorio, al fine di stabilizzare, consolidare e difendere i terreni dal dissesto idrogeologico e di migliorare l’efficienza funzionale dei bacini idrografici e dei sistemi forestali;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "viabilità forestale e silvo-pastorale: la rete di strade, piste, vie di esbosco, piazzole e opere forestali aventi carattere permanente o transitorio, comunque vietate al transito ordinario, con fondo prevalentemente non asfaltato e a carreggiata unica, che interessano o attraversano le aree boscate e pascolive, funzionali a garantire il governo del territorio, la tutela, la gestione e la valorizzazione ambientale, economica e paesaggistica del patrimonio forestale, nonché le attivita’ di prevenzione ed estinzione degli incendi boschivi;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "terreni abbandonati: fatto salvo quanto previsto dalle normative regionali vigenti, i terreni forestali nei quali i boschi cedui hanno superato, senza interventi selvicolturali, almeno della metà il turno minimo fissato dalle norme forestali regionali, ed i boschi d’alto fusto in cui non siano stati attuati interventi di sfollo o diradamento negli ultimi venti anni, nonché i terreni agricoli sui quali non sia stata esercitata attività agricola da almeno tre anni, in base ai principi e alle definizioni di cui al regolamento (UE) n. 1307/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013 e relative disposizioni nazionali di attuazione, ad esclusione dei terreni sottoposti ai vincoli di destinazione d’uso;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "terreni silenti: i terreni agricoli e forestali di cui alla lettera g) per i quali i proprietari non siano individuabili o reperibili a seguito di apposita istruttoria;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "prato o pascolo permanente: le superfici non comprese nell’avvicendamento delle colture dell’azienda da almeno cinque anni, in attualità di coltura per la coltivazione di erba e altre piante erbacee da foraggio, spontanee o coltivate, destinate ad essere sfalciate, affienate o insilate una o più volte nell’anno, o sulle quali è svolta attività agricola di mantenimento, o usate per il pascolo del bestiame, che possono comprendere altre specie, segnatamente arbustive o arboree, utilizzabili per il pascolo o che producano mangime animale, purché l’erba e le altre piante erbaceeda foraggio restino predominanti;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "prato o pascolo arborato: le superfici in attualità di coltura con copertura arborea forestale inferiore al 20 per cento, impiegate principalmente per il pascolo del bestiame;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "bosco da pascolo: le superfici a bosco destinate tradizionalmente anche a pascolo con superficie erbacea non predominante;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "arboricoltura da legno: la coltivazione di impianti arborei in terreni non boscati o soggetti ad ordinaria lavorazione agricola, finalizzata prevalentemente alla produzione di legno a uso industriale o energetico e che e’ liberamente reversibile al termine del ciclo colturale;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "programmazione forestale: l’insieme delle strategie e degli interventi volti, nel lungo periodo, ad assicurare la tutela, la valorizzazione, la gestione attiva del patrimonio forestale o la creazione di nuove foreste;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "attività di gestione forestale: le attività descritte nell’articolo 7, comma 1;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "impresa forestale: impresa iscritta nel registro di cui all’articolo 8 della legge 29 dicembre 1993, n. 580, che esercita prevalentemente attività di gestione forestale, fornendo anche servizi in ambito forestale e ambientale e che risulti iscritta negli elenchi o negli albi delle imprese forestali regionali di cui all’articolo 10, comma 2;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "bosco di protezione diretta: superficie boscata che per la propria speciale ubicazione svolge una funzione di protezione diretta di persone, beni e infrastrutture da pericoli naturali quali valanghe, caduta massi, scivolamenti superficiali, lave torrentizie e altro, impedendo l’evento o mitigandone l’effetto;" .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "materiale di moltiplicazione: il materiale di cui all’articolo 2, comma 1, lettera a), del decreto legislativo 10 novembre 2003, n. 386." .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "Per le materie di competenza esclusiva dello Stato, sono definite bosco le superfici coperte da vegetazione forestale arborea, associata o meno a quella arbustiva, di origine naturale o artificiale in qualsiasi stadio di sviluppo ed evoluzione, con estensione non inferiore ai 2.000 metri quadri, larghezza media non inferiore a 20 metri e con copertura arborea forestale maggiore del 20 per cento." .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> "Le regioni, per quanto di loro competenza e in relazione alle proprie esigenze e caratteristiche territoriali, ecologiche e socio-economiche, possono adottare una definizione integrativa di bosco rispetto a quella dettata al comma 3, nonché definizioni integrative di aree assimilate a bosco e di aree escluse dalla definizione di bosco di cui, rispettivamente, agli articoli 4 e 5, purché non venga diminuito il livello di tutela e conservazione così assicurato alle foreste come presidio fondamentale della qualità della vita." .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_attiva
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_attiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_attiva> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#larghezza_media_non_inferiore_a_20_metri
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#larghezza_media_non_inferiore_a_20_metri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#larghezza_media_non_inferiore_a_20_metri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

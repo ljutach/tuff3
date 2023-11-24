@@ -1,0 +1,1184 @@
+@prefix : <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#> .
+
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:range rdfs:Literal ;
+             rdfs:domain owl:Thing .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> ;
+                                                                   rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+                                                                   owl:propertyDisjointWith :partecipant .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actedIn
+:actedIn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :partecipant ;
+         owl:inverseOf :actor ;
+         rdfs:domain :Relation ;
+         rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor
+:actor rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :partecipant ;
+       rdfs:domain :Entity ;
+       rdfs:range :Relation ;
+       owl:propertyDisjointWith :undergoer .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr
+:hasAttr rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> ;
+         owl:inverseOf :isAttributeOf ;
+         rdfs:domain :Entity ;
+         rdfs:range :Attribute .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasCondition
+:hasCondition rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasAttr ;
+              owl:inverseOf :isConditionOf ;
+              rdfs:domain :Entity ;
+              rdfs:range :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasException
+:hasException rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasAttr ;
+              owl:inverseOf :isExceptionOf ;
+              rdfs:domain :Entity ;
+              rdfs:range :Exception .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasAttr ;
+             owl:inverseOf :isFunctionOf ;
+             rdfs:domain :Entity ;
+             rdfs:range :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetaAttr
+:hasMetaAttr rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> ;
+             owl:inverseOf :isMetaAttrOf ;
+             rdfs:domain :Attribute ;
+             rdfs:range :Attribute .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasMetric
+:hasMetric rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasAttr ;
+           owl:inverseOf :isMetricOf ;
+           rdfs:domain :Entity ;
+           rdfs:range :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasReference
+:hasReference rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasAttr ;
+              owl:inverseOf :isReferenceOf ;
+              rdfs:domain :Entity ;
+              rdfs:range :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isAttributeOf
+:isAttributeOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> ;
+               rdfs:domain :Attribute ;
+               rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isConditionOf
+:isConditionOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasAttr ;
+               rdfs:domain :Condition ;
+               rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isExceptionOf
+:isExceptionOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasAttr ;
+               rdfs:domain :Exception ;
+               rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isFunctionOf
+:isFunctionOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasAttr ;
+              rdfs:domain :Function ;
+              rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetaAttrOf
+:isMetaAttrOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality> ;
+              rdfs:domain :Attribute ;
+              rdfs:range :Attribute .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isMetricOf
+:isMetricOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasAttr ;
+            rdfs:domain :Metric ;
+            rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#isReferenceOf
+:isReferenceOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasAttr ;
+               rdfs:domain :Reference ;
+               rdfs:range :Entity .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant
+:partecipant rdf:type owl:ObjectProperty ;
+             rdfs:domain :Entity ;
+             rdfs:range :Relation .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer
+:undergoer rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :partecipant ;
+           owl:inverseOf :underwent ;
+           rdfs:domain :Entity ;
+           rdfs:range :Relation .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent
+:underwent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :partecipant ;
+           rdfs:domain :Relation ;
+           rdfs:range :Entity .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText
+:hasFullText rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Reference ;
+             rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute
+:Attribute rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+           owl:disjointWith :Entity ,
+                            :Relation ;
+           rdfs:comment "An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf :Attribute ;
+           owl:disjointWith :Exception ,
+                            :Function ,
+                            :Metric ,
+                            :Reference ;
+           rdfs:comment "An Attribute specifying a condition to be fulfilled"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition
+:Definition rdf:type owl:Class ;
+            rdfs:subClassOf :Relation ;
+            rdfs:comment "A predicate connecting an Explanandum to an Explanans"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity
+:Entity rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception
+:Exception rdf:type owl:Class ;
+           rdfs:subClassOf :Attribute ;
+           owl:disjointWith :Function ,
+                            :Metric ,
+                            :Reference ;
+           rdfs:comment "An Attribute specifying an unfulfilled condition"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum
+:Explanandum rdf:type owl:Class ;
+             rdfs:subClassOf :Entity ;
+             owl:disjointWith :Explanans ;
+             rdfs:comment "The subject of a definition"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans
+:Explanans rdf:type owl:Class ;
+           rdfs:subClassOf :Entity ;
+           rdfs:comment "A word or a set of words defining an Explanandum"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf :Attribute ;
+          owl:disjointWith :Metric ,
+                           :Reference ;
+          rdfs:comment "An Attribute specifying an expected role"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric
+:Metric rdf:type owl:Class ;
+        rdfs:subClassOf :Attribute ;
+        owl:disjointWith :Reference ;
+        rdfs:comment "An Attribute specifying a quantitative dimension"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference
+:Reference rdf:type owl:Class ;
+           rdfs:subClassOf :Attribute ;
+           rdfs:comment "An Attribute specifying a source"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation
+:Relation rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso
+:ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso rdf:type owl:NamedIndividual ,
+                                                                                             :Exception .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#ad_uso_alimentare_e_non_alimentare
+:ad_uso_alimentare_e_non_alimentare rdf:type owl:NamedIndividual ,
+                                             :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#arboricoltura_da_legno
+:arboricoltura_da_legno rdf:type owl:NamedIndividual ,
+                                 :Explanandum ;
+                        :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> ;
+                        :hasReference :comma_2n .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_assimilate_a_bosco
+:aree_assimilate_a_bosco rdf:type owl:NamedIndividual ,
+                                  :Explanandum ;
+                         :hasReference :comma_4 ,
+                                       :definito_in_articolo_4 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#aree_escluse_dalla_definizione_di_bosco
+:aree_escluse_dalla_definizione_di_bosco rdf:type owl:NamedIndividual ,
+                                                  :Explanandum ;
+                                         :hasReference :comma_4 ,
+                                                       :definito_in_articolo_5 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale
+:assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale rdf:type owl:NamedIndividual ,
+                                                                                                 :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#attivita_di_gestione_forestale
+:attivita_di_gestione_forestale rdf:type owl:NamedIndividual ,
+                                         :Explanandum ;
+                                :hasReference :comma_2p ,
+                                              :definite_in_articolo_7_comma_1 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#boschi
+:boschi rdf:type owl:NamedIndividual ,
+                 :Explanans ;
+        :hasCondition :in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni ;
+        :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco
+:bosco rdf:type owl:NamedIndividual ,
+                :Explanandum ;
+       owl:sameAs :foresta ,
+                  :selva ;
+       :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> ,
+              <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> ;
+       :hasReference :comma_1 ,
+                     :comma_3 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_da_pascolo
+:bosco_da_pascolo rdf:type owl:NamedIndividual ,
+                           :Explanandum ;
+                  :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> ;
+                  :hasReference :comma_2m .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#bosco_di_protezione_diretta
+:bosco_di_protezione_diretta rdf:type owl:NamedIndividual ,
+                                      :Explanandum ;
+                             :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> ;
+                             :hasReference :comma_2r .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carattere_permanente_o_transitorio
+:carattere_permanente_o_transitorio rdf:type owl:NamedIndividual ,
+                                             :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#carreggiata_unica
+:carreggiata_unica rdf:type owl:NamedIndividual ,
+                            :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazione
+:coltivazione rdf:type owl:NamedIndividual ,
+                       :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#coltivazioni_di_impianti_arborei
+:coltivazioni_di_impianti_arborei rdf:type owl:NamedIndividual ,
+                                           :Explanans ;
+                                  :hasCondition :in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale ,
+                                                :in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola ;
+                                  :hasFunction :produrre_legno_a_uso_industriale_o_energetico ;
+                                  :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993
+:come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993 rdf:type owl:NamedIndividual ,
+                                                                             :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_1
+:comma_1 rdf:type owl:NamedIndividual ,
+                  :Reference ;
+         :hasFullText "I termini bosco, foresta e selva sono equiparati." .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2a
+:comma_2a rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "patrimonio forestale nazionale: l’insieme dei boschi, di cui ai commi 3 e 4, e delle aree assimilate a bosco, di cui all’articolo 4, radicati sul territorio dello Stato, di proprietà pubblica e privata;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2b
+:comma_2b rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "gestione forestale sostenibile o gestione attiva: insieme delle azioni selvicolturali volte a valorizzare la molteplicità delle funzioni del bosco, a garantire la produzione sostenibile di beni e servizi ecosistemici, nonche’ una gestione e uso delle foreste e dei terreni forestali nelle forme e ad un tasso di utilizzo che consenta di mantenere la loro biodiversità, produttività, rinnovazione, vitalita’ e potenzialita’ di adempiere, ora e in futuro, a rilevanti funzioni ecologiche, economiche e sociali a livello locale, nazionale e globale, senza comportare danni ad altri ecosistemi;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2c
+:comma_2c rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "pratiche selvicolturali: i tagli, le cure e gli interventi volti all’impianto, alla coltivazione, alla prevenzione di incendi, al trattamento e all’utilizzazione dei boschi e alla produzione di quanto previsto alla lettera d);" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2d
+:comma_2d rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "prodotti forestali spontanei non legnosi: tutti i prodotti di origine biologica ad uso alimentare e ad uso non alimentare, derivati dalla foresta o da altri terreni boscati e da singoli alberi, escluso il legno in ogni sua forma;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2e
+:comma_2e rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "sistemazioni idraulico-forestali: gli interventie le opere di carattere intensivo ed estensivo attuati, anche congiuntamente, sul territorio, al fine di stabilizzare, consolidare e difendere i terreni dal dissesto idrogeologico e di migliorare l’efficienza funzionale dei bacini idrografici e dei sistemi forestali;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2f
+:comma_2f rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "viabilità forestale e silvo-pastorale: la rete di strade, piste, vie di esbosco, piazzole e opere forestali aventi carattere permanente o transitorio, comunque vietate al transito ordinario, con fondo prevalentemente non asfaltato e a carreggiata unica, che interessano o attraversano le aree boscate e pascolive, funzionali a garantire il governo del territorio, la tutela, la gestione e la valorizzazione ambientale, economica e paesaggistica del patrimonio forestale, nonché le attivita’ di prevenzione ed estinzione degli incendi boschivi;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2g
+:comma_2g rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "terreni abbandonati: fatto salvo quanto previsto dalle normative regionali vigenti, i terreni forestali nei quali i boschi cedui hanno superato, senza interventi selvicolturali, almeno della metà il turno minimo fissato dalle norme forestali regionali, ed i boschi d’alto fusto in cui non siano stati attuati interventi di sfollo o diradamento negli ultimi venti anni, nonché i terreni agricoli sui quali non sia stata esercitata attività agricola da almeno tre anni, in base ai principi e alle definizioni di cui al regolamento (UE) n. 1307/2013 del Parlamento europeo e del Consiglio del 17 dicembre 2013 e relative disposizioni nazionali di attuazione, ad esclusione dei terreni sottoposti ai vincoli di destinazione d’uso;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2h
+:comma_2h rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "terreni silenti: i terreni agricoli e forestali di cui alla lettera g) per i quali i proprietari non siano individuabili o reperibili a seguito di apposita istruttoria;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2i
+:comma_2i rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "prato o pascolo permanente: le superfici non comprese nell’avvicendamento delle colture dell’azienda da almeno cinque anni, in attualità di coltura per la coltivazione di erba e altre piante erbacee da foraggio, spontanee o coltivate, destinate ad essere sfalciate, affienate o insilate una o più volte nell’anno, o sulle quali è svolta attività agricola di mantenimento, o usate per il pascolo del bestiame, che possono comprendere altre specie, segnatamente arbustive o arboree, utilizzabili per il pascolo o che producano mangime animale, purché l’erba e le altre piante erbaceeda foraggio restino predominanti;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2l
+:comma_2l rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "prato o pascolo arborato: le superfici in attualità di coltura con copertura arborea forestale inferiore al 20 per cento, impiegate principalmente per il pascolo del bestiame;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2m
+:comma_2m rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "bosco da pascolo: le superfici a bosco destinate tradizionalmente anche a pascolo con superficie erbacea non predominante;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2n
+:comma_2n rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "arboricoltura da legno: la coltivazione di impianti arborei in terreni non boscati o soggetti ad ordinaria lavorazione agricola, finalizzata prevalentemente alla produzione di legno a uso industriale o energetico e che e’ liberamente reversibile al termine del ciclo colturale;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2o
+:comma_2o rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "programmazione forestale: l’insieme delle strategie e degli interventi volti, nel lungo periodo, ad assicurare la tutela, la valorizzazione, la gestione attiva del patrimonio forestale o la creazione di nuove foreste;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2p
+:comma_2p rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "attività di gestione forestale: le attività descritte nell’articolo 7, comma 1;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2q
+:comma_2q rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "impresa forestale: impresa iscritta nel registro di cui all’articolo 8 della legge 29 dicembre 1993, n. 580, che esercita prevalentemente attività di gestione forestale, fornendo anche servizi in ambito forestale e ambientale e che risulti iscritta negli elenchi o negli albi delle imprese forestali regionali di cui all’articolo 10, comma 2;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2r
+:comma_2r rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "bosco di protezione diretta: superficie boscata che per la propria speciale ubicazione svolge una funzione di protezione diretta di persone, beni e infrastrutture da pericoli naturali quali valanghe, caduta massi, scivolamenti superficiali, lave torrentizie e altro, impedendo l’evento o mitigandone l’effetto;" .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_2s
+:comma_2s rdf:type owl:NamedIndividual ,
+                   :Reference ;
+          :hasFullText "materiale di moltiplicazione: il materiale di cui all’articolo 2, comma 1, lettera a), del decreto legislativo 10 novembre 2003, n. 386." .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_3
+:comma_3 rdf:type owl:NamedIndividual ,
+                  :Reference ;
+         :hasFullText "Per le materie di competenza esclusiva dello Stato, sono definite bosco le superfici coperte da vegetazione forestale arborea, associata o meno a quella arbustiva, di origine naturale o artificiale in qualsiasi stadio di sviluppo ed evoluzione, con estensione non inferiore ai 2.000 metri quadri, larghezza media non inferiore a 20 metri e con copertura arborea forestale maggiore del 20 per cento." .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#comma_4
+:comma_4 rdf:type owl:NamedIndividual ,
+                  :Reference ;
+         :hasFullText "Le regioni, per quanto di loro competenza e in relazione alle proprie esigenze e caratteristiche territoriali, ecologiche e socio-economiche, possono adottare una definizione integrativa di bosco rispetto a quella dettata al comma 3, nonché definizioni integrative di aree assimilate a bosco e di aree escluse dalla definizione di bosco di cui, rispettivamente, agli articoli 4 e 5, purché non venga diminuito il livello di tutela e conservazione così assicurato alle foreste come presidio fondamentale della qualità della vita." .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_inferiore_al_20_per_cento
+:copertura_arborea_forestale_inferiore_al_20_per_cento rdf:type owl:NamedIndividual ,
+                                                                :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#copertura_arborea_forestale_maggiore_del_20_per_cento
+:copertura_arborea_forestale_maggiore_del_20_per_cento rdf:type owl:NamedIndividual ,
+                                                                :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#creazione_di_nuove_foreste
+:creazione_di_nuove_foreste rdf:type owl:NamedIndividual ,
+                                     :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definite_in_articolo_7_comma_1
+:definite_in_articolo_7_comma_1 rdf:type owl:NamedIndividual ,
+                                         :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definiti_alla_lettera_g
+:definiti_alla_lettera_g rdf:type owl:NamedIndividual ,
+                                  :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003
+:definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003 rdf:type owl:NamedIndividual ,
+                                                                                                      :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_4
+:definito_in_articolo_4 rdf:type owl:NamedIndividual ,
+                                 :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#definito_in_articolo_5
+:definito_in_articolo_5 rdf:type owl:NamedIndividual ,
+                                 :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno
+:destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno rdf:type owl:NamedIndividual ,
+                                                                                          :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_cui_in_articolo_10_comma_2
+:di_cui_in_articolo_10_comma_2 rdf:type owl:NamedIndividual ,
+                                        :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione
+:di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione rdf:type owl:NamedIndividual ,
+                                                                                          :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_proprieta_pubblica_e_privata
+:di_proprieta_pubblica_e_privata rdf:type owl:NamedIndividual ,
+                                          :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#di_quanto_previsto_alla_lettera_d
+:di_quanto_previsto_alla_lettera_d rdf:type owl:NamedIndividual ,
+                                            :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale
+:esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale rdf:type owl:NamedIndividual ,
+                                                                                                       :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#estensione_non_inferiore_ai_2.000_metri_quadri
+:estensione_non_inferiore_ai_2.000_metri_quadri rdf:type owl:NamedIndividual ,
+                                                         :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#fondo_prevalentemente_non_asfaltato
+:fondo_prevalentemente_non_asfaltato rdf:type owl:NamedIndividual ,
+                                              :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#foresta
+:foresta rdf:type owl:NamedIndividual ,
+                  :Explanans ;
+         :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale
+:funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale rdf:type owl:NamedIndividual ,
+                                                                                        :Function ;
+                                                                               :hasMetaAttr :senza_comportare_danni_ad_altri_ecosistemi .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_il_governo_del_territorio
+:garantire_il_governo_del_territorio rdf:type owl:NamedIndividual ,
+                                              :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici
+:garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici rdf:type owl:NamedIndividual ,
+                                                                             :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_attiva
+:gestione_attiva rdf:type owl:NamedIndividual ;
+                 owl:sameAs :gestione_forestale_sostenibile .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_ed_uso_delle_foreste_e_dei_terreni_forestali
+:gestione_ed_uso_delle_foreste_e_dei_terreni_forestali rdf:type owl:NamedIndividual ,
+                                                                :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#gestione_forestale_sostenibile
+:gestione_forestale_sostenibile rdf:type owl:NamedIndividual ,
+                                         :Explanandum ;
+                                :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> ;
+                                :hasReference :comma_2b .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali
+:i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali rdf:type owl:NamedIndividual ,
+                                                                                                            :Metric ;
+                                                                                                   :hasMetaAttr :senza_interventi_selvicolturali .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro
+:impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro rdf:type owl:NamedIndividual ,
+                                                                                                                              :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impianto
+:impianto rdf:type owl:NamedIndividual ,
+                   :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#impresa_forestale
+:impresa_forestale rdf:type owl:NamedIndividual ,
+                            :Explanandum ;
+                   :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> ;
+                   :hasReference :comma_2q .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate
+:in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate rdf:type owl:NamedIndividual ,
+                                                                                                                    :Function ;
+                                                                                                           :hasMetaAttr :destinate_ad_essere_sfalciate_o_affienate_o_insilate_una_o_piu_volte_in_un_anno .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni
+:in_cui_non_siano_stati_attuati_interventi_di_sfollo_o_diradamento_negli_ultimi_venti_anni rdf:type owl:NamedIndividual ,
+                                                                                                    :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale
+:in_terreni_liberamente_reversibili_al_termine_del_ciclo_colturale rdf:type owl:NamedIndividual ,
+                                                                            :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola
+:in_terreni_non_boscati_o_soggetti_ad_ordinaria_lavorazione_agricola rdf:type owl:NamedIndividual ,
+                                                                              :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_dei_boschi
+:insieme_dei_boschi rdf:type owl:NamedIndividual ,
+                             :Explanans ;
+                    :hasCondition :di_proprieta_pubblica_e_privata ,
+                                  :radicati_sul_territorio_dello_Stato ;
+                    :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_aree_assimilate_a_bosco
+:insieme_delle_aree_assimilate_a_bosco rdf:type owl:NamedIndividual ,
+                                                :Explanans ;
+                                       :hasCondition :di_proprieta_pubblica_e_privata ,
+                                                     :radicati_sul_territorio_dello_Stato ;
+                                       :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_comprendenti_tagli_cure_e_interventi
+:insieme_delle_azioni_comprendenti_tagli_cure_e_interventi rdf:type owl:NamedIndividual ,
+                                                                    :Explanans ;
+                                                           :hasFunction :coltivazione ,
+                                                                        :impianto ,
+                                                                        :prevenzione_di_incendi ,
+                                                                        :produzione ,
+                                                                        :trattamento_dei_boschi ,
+                                                                        :utilizzazione_dei_boschi ;
+                                                           :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_azioni_selvicolturali
+:insieme_delle_azioni_selvicolturali rdf:type owl:NamedIndividual ,
+                                              :Explanans ;
+                                     :hasFunction :funzioni_ecologiche_economiche_e_sociali_a_livello_locale_nazionale_e_globale ,
+                                                  :garantire_la_produzione_sostenibile_di_beni_e_servizi_ecosistemici ,
+                                                  :gestione_ed_uso_delle_foreste_e_dei_terreni_forestali ,
+                                                  :mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita ,
+                                                  :valorizzare_la_molteplicita_delle_funzioni_del_bosco ;
+                                     :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali
+:insieme_delle_imprese_iscritte_negli_elenchi_o_negli_albi_delle_imprese_forestali_regionali rdf:type owl:NamedIndividual ,
+                                                                                                      :Explanans ;
+                                                                                             :hasFunction :esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale ;
+                                                                                             :hasReference :di_cui_in_articolo_10_comma_2 ;
+                                                                                             :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_imprese_iscritte_nel_registro
+:insieme_delle_imprese_iscritte_nel_registro rdf:type owl:NamedIndividual ,
+                                                      :Explanans ;
+                                             :hasFunction :esercitare_attivita_di_gestione_forestale_e_fornire_servizi_in_ambito_forestale_e_ambientale ;
+                                             :hasReference :come_definito_in_articolo_8_della_legge_n_580_del_29_dicembre_1993 ;
+                                             :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_strategie_e_degli_interventi
+:insieme_delle_strategie_e_degli_interventi rdf:type owl:NamedIndividual ,
+                                                     :Explanans ;
+                                            :hasFunction :assicurare_la_tutela_e_la_valorizzazione_e_la_gestione_attiva_del_patrimonio_forestale ,
+                                                         :creazione_di_nuove_foreste ;
+                                            :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici
+:insieme_delle_superfici rdf:type owl:NamedIndividual ,
+                                  :Explanans ;
+                         :hasCondition :superficie_erbacea_non_predominante ;
+                         :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui
+:insieme_delle_superfici_boscate_ubicate_in_punti_tali_per_cui rdf:type owl:NamedIndividual ,
+                                                                        :Explanans ;
+                                                               :hasFunction :impedisce_evento_o_mitiga_effetto_di_valanghe_e_caduta_massi_e_scivolamenti_superficiali_e_lave_torrentizie_e_altro ,
+                                                                            :protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture ;
+                                                               :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interessano_o_attraversano_aree_boscate_e_pascolive
+:interessano_o_attraversano_aree_boscate_e_pascolive rdf:type owl:NamedIndividual ,
+                                                              :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio
+:interventi_e_opere_di_carattere_intesivo_ed_estensivo_attuati_sul_territorio rdf:type owl:NamedIndividual ,
+                                                                                       :Explanans ;
+                                                                              :hasFunction :migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali ,
+                                                                                           :stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico ;
+                                                                              :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#larghezza_media_non_inferiore_a_20_metri
+:larghezza_media_non_inferiore_a_20_metri rdf:type owl:NamedIndividual ,
+                                                   :Metric .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#legno_in_ogni_sua_forma
+:legno_in_ogni_sua_forma rdf:type owl:NamedIndividual ,
+                                  :Exception .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita
+:mantenere_la_loro_biodiversita_produttivita_rinnovazione_e_vitalita rdf:type owl:NamedIndividual ,
+                                                                              :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#materiale_di_moltiplicazione
+:materiale_di_moltiplicazione rdf:type owl:NamedIndividual ,
+                                       :Explanandum ;
+                              :hasReference :comma_2s ,
+                                            :definito_in_articolo_2_comma_1_lettera_a_del_decreto_legislativo_n_386_del_10_novembre_2003 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali
+:migliorare_efficienza_funzionale_dei_bacini_idrografici_e_dei_sistemi_forestali rdf:type owl:NamedIndividual ,
+                                                                                          :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni
+:non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni rdf:type owl:NamedIndividual ,
+                                                                          :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pascolo_del_bestiame
+:pascolo_del_bestiame rdf:type owl:NamedIndividual ,
+                               :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#patrimonio_forestale_nazionale
+:patrimonio_forestale_nazionale rdf:type owl:NamedIndividual ,
+                                         :Explanandum ;
+                                :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> ;
+                                :hasReference :comma_2a .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#pratiche_selvicolturali
+:pratiche_selvicolturali rdf:type owl:NamedIndividual ,
+                                  :Explanandum ;
+                         :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> ;
+                         :hasReference :comma_2c .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_arborato
+:prato_o_pascolo_arborato rdf:type owl:NamedIndividual ,
+                                   :Explanandum ;
+                          :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> ;
+                          :hasReference :comma_2l .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prato_o_pascolo_permanente
+:prato_o_pascolo_permanente rdf:type owl:NamedIndividual ,
+                                     :Explanandum ;
+                            :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> ;
+                            :hasReference :comma_2i .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_di_incendi
+:prevenzione_di_incendi rdf:type owl:NamedIndividual ,
+                                 :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prevenzione_ed_estinzione_degli_incendi_boschivi
+:prevenzione_ed_estinzione_degli_incendi_boschivi rdf:type owl:NamedIndividual ,
+                                                           :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013
+:principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013 rdf:type owl:NamedIndividual ,
+                                                                                                                       :Reference .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi
+:prodotti_di_origine_biologica_derivati_dalla_foresta_o_da_altri_terreni_boscati_o_da_singoli_alberi rdf:type owl:NamedIndividual ,
+                                                                                                              :Explanans ;
+                                                                                                     :hasException :legno_in_ogni_sua_forma ;
+                                                                                                     :hasFunction :ad_uso_alimentare_e_non_alimentare ;
+                                                                                                     :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#prodotti_forestali_spontanei_non_legnosi
+:prodotti_forestali_spontanei_non_legnosi rdf:type owl:NamedIndividual ,
+                                                   :Explanandum ;
+                                          :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> ;
+                                          :hasReference :comma_2d .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produrre_legno_a_uso_industriale_o_energetico
+:produrre_legno_a_uso_industriale_o_energetico rdf:type owl:NamedIndividual ,
+                                                        :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#produzione
+:produzione rdf:type owl:NamedIndividual ,
+                     :Function ;
+            :hasMetaAttr :di_quanto_previsto_alla_lettera_d .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#programmazione_forestale
+:programmazione_forestale rdf:type owl:NamedIndividual ,
+                                   :Explanandum ;
+                          :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> ;
+                          :hasReference :comma_2o .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria
+:proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria rdf:type owl:NamedIndividual ,
+                                                                                       :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture
+:protezione_diretta_nei_confronti_di_persone_e_beni_e_infrastrutture rdf:type owl:NamedIndividual ,
+                                                                              :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti
+:purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti rdf:type owl:NamedIndividual ,
+                                                                              :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#radicati_sul_territorio_dello_Stato
+:radicati_sul_territorio_dello_Stato rdf:type owl:NamedIndividual ,
+                                              :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali
+:rete_di_strade_e_piste_e_vie_di_esbosco_e_piazzole_e_opere_forestali rdf:type owl:NamedIndividual ,
+                                                                               :Explanans ;
+                                                                      :hasCondition :carattere_permanente_o_transitorio ,
+                                                                                    :interessano_o_attraversano_aree_boscate_e_pascolive ,
+                                                                                    :vietate_al_transito_ordinario ;
+                                                                      :hasFunction :garantire_il_governo_del_territorio ,
+                                                                                   :prevenzione_ed_estinzione_degli_incendi_boschivi ,
+                                                                                   :tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale ;
+                                                                      :hasMetric :carreggiata_unica ,
+                                                                                 :fondo_prevalentemente_non_asfaltato ;
+                                                                      :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#selva
+:selva rdf:type owl:NamedIndividual ,
+                :Explanans ;
+       :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_comportare_danni_ad_altri_ecosistemi
+:senza_comportare_danni_ad_altri_ecosistemi rdf:type owl:NamedIndividual ,
+                                                     :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#senza_interventi_selvicolturali
+:senza_interventi_selvicolturali rdf:type owl:NamedIndividual ,
+                                          :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sistemazioni_idraulico_forestali
+:sistemazioni_idraulico_forestali rdf:type owl:NamedIndividual ,
+                                           :Explanandum ;
+                                  :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> ;
+                                  :hasReference :comma_2e .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico
+:stabilizzare_consolidare_e_difendere_i_terreni_dal_dissesto_idrogeologico rdf:type owl:NamedIndividual ,
+                                                                                    :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni
+:sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni rdf:type owl:NamedIndividual ,
+                                                                                  :Condition ;
+                                                                         :hasMetaAttr :principi_definiti_nel_regolamento_UE_n_1307_2013_del_Parlamento_europeo_e_del_Consiglio_del_17_dicembre_2013 .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame
+:sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame rdf:type owl:NamedIndividual ,
+                                                                                                         :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici
+:superfici rdf:type owl:NamedIndividual ,
+                    :Explanans ;
+           :hasCondition :non_sottoposte_alla_produzione_di_colture_da_almeno_cinque_anni ;
+           :hasFunction :in_attualita_di_coltura_per_coltivazione_di_erba_e_altre_piante_erbacee_da_foraggio_spontanee_o_coltivate ,
+                        :sulle_quali_viene_svolta_attivita_agricola_di_mantenimento_o_usate_per_il_pascolo_del_bestiame ;
+           :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_contenenti_specie_arbustive_o_arboree
+:superfici_contenenti_specie_arbustive_o_arboree rdf:type owl:NamedIndividual ,
+                                                          :Explanans ;
+                                                 :hasFunction :utilizzabili_per_il_pascolo_o_che_producano_mangime_animale ;
+                                                 :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva
+:superfici_coperte_da_vegetazione_forestale_arborea_associata_o_meno_a_quella_arbustiva rdf:type owl:NamedIndividual ,
+                                                                                                 :Explanans ;
+                                                                                        :hasCondition :di_origine_naturale_o_artificiale_in_qualsiasi_stadio_di_sviluppo_ed_evoluzione ;
+                                                                                        :hasMetric :copertura_arborea_forestale_maggiore_del_20_per_cento ,
+                                                                                                   :estensione_non_inferiore_ai_2.000_metri_quadri ;
+                                                                                        :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_in_attualita_di_coltura
+:superfici_in_attualita_di_coltura rdf:type owl:NamedIndividual ,
+                                            :Explanans ;
+                                   :hasFunction :pascolo_del_bestiame ;
+                                   :hasMetric :copertura_arborea_forestale_inferiore_al_20_per_cento ;
+                                   :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superfici_usate_per_il_pascolo_di_bestiame
+:superfici_usate_per_il_pascolo_di_bestiame rdf:type owl:NamedIndividual ,
+                                                     :Explanandum ;
+                                            :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> ;
+                                            :hasReference :comma_2i .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#superficie_erbacea_non_predominante
+:superficie_erbacea_non_predominante rdf:type owl:NamedIndividual ,
+                                              :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni
+:terreni rdf:type owl:NamedIndividual ,
+                  :Explanans ;
+         :hasCondition :sui_quali_non_sia_stata_esercitata_attività_agricola_da_almeno_tre_anni ;
+         :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_bosco_ceduo
+:terreni_abbandonati_caratterizzati_da_bosco_ceduo rdf:type owl:NamedIndividual ,
+                                                            :Explanandum ;
+                                                   :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> ;
+                                                   :hasReference :comma_2g .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_da_colture_agricole
+:terreni_abbandonati_caratterizzati_da_colture_agricole rdf:type owl:NamedIndividual ,
+                                                                 :Explanandum ;
+                                                        :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> ;
+                                                        :hasException :ad_esclusione_dei_terreni_abbandonati_sottoposti_ai_vincoli_di_destinazione_di_uso ;
+                                                        :hasReference :comma_2g .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto
+:terreni_abbandonati_caratterizzati_dal_bosco_ad_alto_fusto rdf:type owl:NamedIndividual ,
+                                                                     :Explanandum ;
+                                                            :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> ;
+                                                            :hasReference :comma_2g .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_agricoli_e_forestali
+:terreni_agricoli_e_forestali rdf:type owl:NamedIndividual ,
+                                       :Explanans ;
+                              :hasCondition :proprietari_non_individuabili_o_reperibili_a_seguito_di_apposita_istruttoria ;
+                              :hasReference :definiti_alla_lettera_g ;
+                              :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_forestali
+:terreni_forestali rdf:type owl:NamedIndividual ,
+                            :Explanans ;
+                   :hasMetric :i_boschi_hanno_superato_almeno_della_meta_il_turno_minimo_fissato_dalle_norme_forestali_regionali ;
+                   :undergoer <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#terreni_silenti
+:terreni_silenti rdf:type owl:NamedIndividual ,
+                          :Explanandum ;
+                 :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> ;
+                 :hasReference :comma_2h .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#trattamento_dei_boschi
+:trattamento_dei_boschi rdf:type owl:NamedIndividual ,
+                                 :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale
+:tutela_e_gestione_e_valorizzazione_ambientale_e_economica_e_paesaggistica_del_patrimonio_forestale rdf:type owl:NamedIndividual ,
+                                                                                                             :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzabili_per_il_pascolo_o_che_producano_mangime_animale
+:utilizzabili_per_il_pascolo_o_che_producano_mangime_animale rdf:type owl:NamedIndividual ,
+                                                                      :Function ;
+                                                             :hasMetaAttr :purche_erba_e_altre_piante_erbacee_da_foraggio_restino_predominanti .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#utilizzazione_dei_boschi
+:utilizzazione_dei_boschi rdf:type owl:NamedIndividual ,
+                                   :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#valorizzare_la_molteplicita_delle_funzioni_del_bosco
+:valorizzare_la_molteplicita_delle_funzioni_del_bosco rdf:type owl:NamedIndividual ,
+                                                               :Function .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#viabilita_forestale_e_silvo_pastorale
+:viabilita_forestale_e_silvo_pastorale rdf:type owl:NamedIndividual ,
+                                                :Explanandum ;
+                                       :actor <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> ;
+                                       :hasReference :comma_2f .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#vietate_al_transito_ordinario
+:vietate_al_transito_ordinario rdf:type owl:NamedIndividual ,
+                                        :Condition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#1_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                          :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2a_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2b_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2c_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2d_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2e_sono_definite_come> rdf:type owl:NamedIndividual ,
+                                                                                            :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2f_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g1_sono_definiti_come> rdf:type owl:NamedIndividual ,
+                                                                                             :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g2_sono_definiti_come> rdf:type owl:NamedIndividual ,
+                                                                                             :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2g3_sono_definiti_come> rdf:type owl:NamedIndividual ,
+                                                                                             :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2h_sono_definiti_come> rdf:type owl:NamedIndividual ,
+                                                                                            :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i1_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                            :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2i2_sono_definite_come> rdf:type owl:NamedIndividual ,
+                                                                                             :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2l_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2m_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2n_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2o_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2q_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#2r_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                           :Definition .
+
+
+###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#3_si_definisce_come> rdf:type owl:NamedIndividual ,
+                                                                                          :Definition .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
