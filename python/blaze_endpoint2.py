@@ -35,7 +35,7 @@ def results_to_html_table(results):
 
 # Example usage
 tuff3_path = "/home/ljutach/Documents/unibo/DHDK_magistrale/courses/first_year/Knowledge_Representation_and_Extraction/tuff3/knowledge_base/tuff3.ttl"
-query_number = "1"
+query_number = "01"
 
 output_html_file = "output" + query_number + ".html"
 input_file = "/home/ljutach/Documents/unibo/DHDK_magistrale/courses/first_year/Knowledge_Representation_and_Extraction/tuff3/CQ_nat_lang/\

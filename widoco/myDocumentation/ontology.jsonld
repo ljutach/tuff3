@@ -147,7 +147,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself"
+    "@value" : "Encompasses characteristic aspects of an entity that cannot exist without it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"
@@ -162,7 +166,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An Attribute specifying a condition to be fulfilled"
+    "@value" : "A condition to be fulfilled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
@@ -189,6 +193,13 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Subsumes the set of physical objects, processes, and substances"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"
   } ]
@@ -197,7 +208,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An Attribute specifying an unfulfilled condition"
+    "@value" : "A condition that must be unfulfilled"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
@@ -227,7 +238,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "A word or a set of words defining an Explanandum"
+    "@value" : "An expression defining an Explanandum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
@@ -237,7 +248,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An Attribute specifying an expected role"
+    "@value" : "An expected role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
@@ -252,7 +263,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An Attribute specifying a quantitative dimension"
+    "@value" : "A quantitative dimension"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
@@ -265,7 +276,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "An Attribute specifying a source"
+    "@value" : "A reference to a paragraph in the main source (TUFF) or in other legislative sources"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Attribute"
@@ -273,6 +284,13 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "captures n-ary interrelations between entities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"
   } ]
@@ -1746,6 +1764,14 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],

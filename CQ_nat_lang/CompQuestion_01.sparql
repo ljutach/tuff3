@@ -1,0 +1,13 @@
+###2) Cosa si intende per Explanandum e Explanans?
+
+SELECT ?class ?annotation
+
+WHERE {
+
+?class rdf:type owl:Class.
+
+?class rdfs:subClassOf t3:Entity.
+
+?class rdfs:comment ?annotation
+
+}

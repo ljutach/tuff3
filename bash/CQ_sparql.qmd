@@ -1,0 +1,35 @@
+---
+title: "SPARQL queries"
+format: pdf
+editor: visual
+---
+
+prefix t3: \<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#\>
+
+###1) Quale è il testo del comma 2o?
+
+SELECT ?comma ?fullText
+
+WHERE {
+
+?explanandum t3:actor t3:2o_si_definisce_come.
+
+?explanandum t3:hasReference ?comma.
+
+?comma t3:hasFullText ?fullText
+
+}
+
+###2) Cosa si intende per Explanandum e Explanans?
+
+SELECT ?class ?annotation
+
+WHERE {
+
+?class rdf:type owl:Class.
+
+?class rdfs:subClassOf t3:Entity.
+
+?class rdfs:comment ?annotation
+
+}

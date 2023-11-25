@@ -17,6 +17,11 @@ rdfs:comment rdfs:range rdfs:Literal ;
              rdfs:domain owl:Thing .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdfs:range rdfs:Literal ;
+                 rdfs:domain owl:Thing .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -201,7 +206,8 @@ rdfs:comment rdfs:range rdfs:Literal ;
            rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
            owl:disjointWith :Entity ,
                             :Relation ;
-           rdfs:comment "An expression functioning as a complement of an Explanans, an Explanandum, or an Attribute itself"^^rdfs:Literal .
+           rdfs:comment "Encompasses characteristic aspects of an entity that cannot exist without it"^^rdfs:Literal ;
+           rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Condition
@@ -211,7 +217,7 @@ rdfs:comment rdfs:range rdfs:Literal ;
                             :Function ,
                             :Metric ,
                             :Reference ;
-           rdfs:comment "An Attribute specifying a condition to be fulfilled"^^rdfs:Literal .
+           rdfs:comment "A condition to be fulfilled"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Definition
@@ -222,7 +228,9 @@ rdfs:comment rdfs:range rdfs:Literal ;
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity
 :Entity rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> ;
+        rdfs:comment "Subsumes the set of physical objects, processes, and substances"^^rdfs:Literal ;
+        rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)" .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Exception
@@ -231,7 +239,7 @@ rdfs:comment rdfs:range rdfs:Literal ;
            owl:disjointWith :Function ,
                             :Metric ,
                             :Reference ;
-           rdfs:comment "An Attribute specifying an unfulfilled condition"^^rdfs:Literal .
+           rdfs:comment "A condition that must be unfulfilled"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanandum
@@ -244,7 +252,7 @@ rdfs:comment rdfs:range rdfs:Literal ;
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Explanans
 :Explanans rdf:type owl:Class ;
            rdfs:subClassOf :Entity ;
-           rdfs:comment "A word or a set of words defining an Explanandum"^^rdfs:Literal .
+           rdfs:comment "An expression defining an Explanandum"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Function
@@ -252,25 +260,27 @@ rdfs:comment rdfs:range rdfs:Literal ;
           rdfs:subClassOf :Attribute ;
           owl:disjointWith :Metric ,
                            :Reference ;
-          rdfs:comment "An Attribute specifying an expected role"^^rdfs:Literal .
+          rdfs:comment "An expected role"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Metric
 :Metric rdf:type owl:Class ;
         rdfs:subClassOf :Attribute ;
         owl:disjointWith :Reference ;
-        rdfs:comment "An Attribute specifying a quantitative dimension"^^rdfs:Literal .
+        rdfs:comment "A quantitative dimension"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference
 :Reference rdf:type owl:Class ;
            rdfs:subClassOf :Attribute ;
-           rdfs:comment "An Attribute specifying a source"^^rdfs:Literal .
+           rdfs:comment "A reference to a paragraph in the main source (TUFF) or in other legislative sources"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation
 :Relation rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+          rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+          rdfs:comment "captures n-ary interrelations between entities"^^rdfs:Literal ;
+          rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)." .
 
 
 #################################################################
