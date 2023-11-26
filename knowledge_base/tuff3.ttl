@@ -46,7 +46,10 @@ rdfs:isDefinedBy rdfs:range rdfs:Literal ;
        rdfs:subPropertyOf :partecipant ;
        rdfs:domain :Entity ;
        rdfs:range :Relation ;
-       owl:propertyDisjointWith :undergoer .
+       owl:propertyDisjointWith :undergoer ;
+       rdfs:comment """It describes the active participation of an instance of Entity in an instance of
+Relation"""^^rdfs:Literal ;
+       rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr
@@ -157,7 +160,9 @@ rdfs:isDefinedBy rdfs:range rdfs:Literal ;
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant
 :partecipant rdf:type owl:ObjectProperty ;
              rdfs:domain :Entity ;
-             rdfs:range :Relation .
+             rdfs:range :Relation ;
+             rdfs:comment "It links entities to the relations in which they participate"^^rdfs:Literal ;
+             rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)."^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer
@@ -165,7 +170,10 @@ rdfs:isDefinedBy rdfs:range rdfs:Literal ;
            rdfs:subPropertyOf :partecipant ;
            owl:inverseOf :underwent ;
            rdfs:domain :Entity ;
-           rdfs:range :Relation .
+           rdfs:range :Relation ;
+           rdfs:comment """It describes the passive participation of an instance of Entity in an instance of
+Relation"""^^rdfs:Literal ;
+           rdfs:isDefinedBy "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"^^rdfs:Literal .
 
 
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent
@@ -182,7 +190,8 @@ rdfs:isDefinedBy rdfs:range rdfs:Literal ;
 ###  http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText
 :hasFullText rdf:type owl:DatatypeProperty ;
              rdfs:domain :Reference ;
-             rdfs:range rdfs:Literal .
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "It assigns full text content of a paragraph to a Reference instance"^^rdfs:Literal .
 
 
 #################################################################

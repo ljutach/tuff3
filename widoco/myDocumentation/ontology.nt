@@ -44,6 +44,8 @@
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the active participation of an instance of Entity in an instance of\nRelation"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasAttr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -140,6 +142,8 @@
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#comment> "It links entities to the relations in which they participate"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -147,6 +151,8 @@
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the passive participation of an instance of Entity in an instance of\nRelation"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#underwent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -167,6 +173,7 @@
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference> .
 <http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText> <http://www.w3.org/2000/01/rdf-schema#comment> "It assigns full text content of a paragraph to a Reference instance"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # 
 # 

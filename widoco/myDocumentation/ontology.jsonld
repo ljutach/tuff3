@@ -312,8 +312,16 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#actor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "It describes the active participation of an instance of Entity in an instance of\nRelation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
@@ -863,6 +871,10 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#hasFullText",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "It assigns full text content of a paragraph to a Reference instance"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Reference"
   } ],
@@ -1277,8 +1289,16 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#partecipant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "It links entities to the relations in which they participate"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"
@@ -1699,8 +1719,16 @@
 }, {
   "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#undergoer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "It describes the passive participation of an instance of Entity in an instance of\nRelation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dasiopoulou, Stamatia, Steffen Lohmann, Joan Codina and Leo Wanner. “Representing and Visualizing Text as Ontologies: A Case from the Patent Domain.” VOILA@ISWC (2015)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/ljutach/ontologies/2023/8/tuff3#Relation"

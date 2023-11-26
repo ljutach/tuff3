@@ -78,8 +78,8 @@ Given the stylistic and structural similarities between patents and legal articl
 <p style="font-size: 30px;">
 <br> 
 
-I began by modifying the source text in order to structure the subparagraphs according to a logic which aims at identifying the concepts to be defined and those that defines. The former were classified as <em>Explanandum</em>, the latter as <em>Explanans</em> and both extends <em>Entity</em> from the reference model. Considering that source text consists of a list of definitions, I extended <em>Relation</em> class with two subclasses: <em>Definition</em>, suitable for most of the cases and <em>Semantic Equivalence</em>, handling just the first subparagraphs. <em>Attribute</em> was used to model <em>Explanans</em>, <em>Explanandum</em> and <em>Attribute</em> properties. Six subclasses were defined as <em>Attribute</em> extensions: <em>Synonym, Reference, Condition, Function, Exception</em> and <em>Metric.<br>
-Synonym</em> denotes the synonymy relationship; <em>Reference</em> traces references or sources; <em>Condition</em> defines the conditions of satisfiability; <em>Function</em> represents purposes or uses; <em>Exception</em> identifies elements exempted from certain conditions and <em>Metric</em> models quantitative determinations. Lastly, the reflexive property <em>hasMetaAttr</em> is employed to define attributes of attributes.<br>
+I began by modifying the source text in order to structure the subparagraphs according to a logic which aims at identifying the concepts to be defined and those that defines. The former were classified as <em>Explanandum</em>, the latter as <em>Explanans</em> and both extends <em>Entity</em> from the reference model. Considering that source text consists of a list of definitions, I extended <em>Relation</em> class with a subclass named <em>Definition</em>. <em>Attribute</em> was used to model <em>Explanans</em>, <em>Explanandum</em> and <em>Attribute</em> properties. Five subclasses were defined as <em>Attribute</em> extensions: <em>Reference, Condition, Function, Exception</em> and <em>Metric.<br>
+<em>Reference</em> traces references or sources; <em>Condition</em> defines the conditions of satisfiability; <em>Function</em> represents purposes or uses; <em>Exception</em> identifies elements exempted from certain conditions and <em>Metric</em> models quantitative determinations. Lastly, the reflexive property <em>hasMetaAttr</em> is employed to define attributes of attributes.<br>
 <em>Entity</em> and <em>Relation</em> are connected through <em>participant</em> subproperties such that, with respect to an Relation instance, <em>Explanandum</em> plays the role of <em>actor</em> and <em>Explanans</em> that of <em>undergoer</em>. Here the resulting UML class diagram representation (Fig. 3).
 </p>
 <figure style="text-align: center;">
@@ -91,11 +91,11 @@ Synonym</em> denotes the synonymy relationship; <em>Reference</em> traces refere
  <section id="ontology-download" class="level3">
 <h2 class="anchored" data-anchor-id="domain-scope" style="text-align: center;">Documentation and Source Code</h2><br><br>
 <!--<figure style="text-align: left;"> -->
-        <p style="font-size: 30px;">The current ontology documentation, as well as its source code, are available at this <a href="https://ljutach.github.io/tuff3/widoco/myDocumentation/index-en.html">link</a> and has been realised thanks to the WIzard for DOCumenting Ontologies (<a href="https://github.com/dgarijo/Widoco" target="_blank">WIDOCO</a>) generator. Below here, users can find an grafical visualization of the tuff3 ontology (Fig. 4).</p>
+        <p style="font-size: 30px;">The current ontology documentation, as well as its source code, are available at this <a href="https://ljutach.github.io/tuff3/widoco/myDocumentation/index-en.html">link</a> and has been realised thanks to the WIzard for DOCumenting Ontologies (<a href="https://github.com/dgarijo/Widoco" target="_blank">WIDOCO</a>) generator. Below here, users can find a grafical visualization of the model produced with <a href="http://vowl.visualdataweb.org/webvowl.html">webVOWL</a> (Fig. 4).</p>
         
 <figure style="text-align: center;">
 <img src="diagrams/tuff3_vowl.png" alt="Your Image Description" style="width: 85%; max-width: 1000px; display: block; margin: auto;">
-<figcaption style="font-style: italic; font-size: 22px;">Fig. 4 - tuff3 VOWL graph</figcaption>
+<figcaption style="font-style: italic; font-size: 22px;">Fig. 4 - tuff3 - VOWL graph</figcaption>
 </figure> <br><br>       
   
 
